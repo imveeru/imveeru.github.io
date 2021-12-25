@@ -6,6 +6,12 @@
 @import url('http://fonts.cdnfonts.com/css/ kenoky');
 
 @font-face {
+    font-family: kenoky_light;
+    src: url(/assets/fonts/KENOKY-Light.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: barracudabold;
     src: url(/assets/fonts/barracuda-bold-webfont.woff2) format('woff2'),
          url(/fonts/barracuda-bold-webfont.woff) format('woff');
