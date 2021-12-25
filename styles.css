@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-@import url('http://fonts.cdnfonts.com/css/ kenoky');
-
 @font-face {
     font-family: kenoky_light;
     src: url(/assets/fonts/KENOKY-Light.woff2) format('woff2');
@@ -42,7 +40,7 @@
 
 body{
     overflow: hidden;
-    font-family: 'KENOKY';
+    font-family: kenoky_light;
 }
 .loader{
     position: absolute;
@@ -99,14 +97,13 @@ body{
 }
 .title{
     font-size: 10vw;
-    font-family: barracudabold;
+    font-family: barracudabold,'Helvetica Neue';
     text-transform: uppercase;
     font-weight: strong;
 }
 .subtitle{
     font-size: 4vw;
-    font-family: 'KENOKY';
-    font-weight:lighter;
+    font-family: kenoky_light;
     color:white;
 }
 
