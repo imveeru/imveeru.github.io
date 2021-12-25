@@ -38,7 +38,7 @@ body{
     height: 100vh;
     width: 100%;
     color: #f5e0bb;    
-    font-size: 150px;
+    font-size: 10vw;
     font-weight: lighter;
     font-style: italic;
     mix-blend-mode: difference;
