@@ -3,33 +3,33 @@
     padding: 0;
 }
 
-@import url('http://fonts.cdnfonts.com/css/kenoky');
+@import url('http://fonts.cdnfonts.com/css/ kenoky');
 
 @font-face {
-    font-family: 'barracudabold';
-    src: url('https://imveeru.github.io/blob/main/assets/fonts/barracuda-bold-webfont.woff2') format('woff2'),
-         url('https://imveeru.github.io/blob/main/assets/fonts/barracuda-bold-webfont.woff') format('woff');
+    font-family: barracudabold;
+    src: url(/assets/fonts/barracuda-bold-webfont.woff2) format('woff2'),
+         url(/fonts/barracuda-bold-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'barracudabold_italic';
-    src: url('https://imveeru.github.io/blob/main/assets/fonts/barracuda-bolditalic-webfont.woff2') format('woff2'),
-         url('https://imveeru.github.io/blob/main/assets/fonts/barracuda-bolditalic-webfont.woff') format('woff');
+    font-family: barracudabold_italic;
+    src: url(/assets/fonts/barracuda-bolditalic-webfont.woff2) format('woff2'),
+         url(/assets/fonts/barracuda-bolditalic-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'barracudaitalic';
-    src: url('https://imveeru.github.io/blob/main/assets/fonts/barracuda-lightitalic-webfont.woff2') format('woff2'),
-         url('https://imveeru.github.io/blob/main/assets/fonts/barracuda-lightitalic-webfont.woff') format('woff');
+    font-family: barracudaitalic;
+    src: url(/assets/fonts/barracuda-lightitalic-webfont.woff2) format('woff2'),
+         url(/assets/fonts/barracuda-lightitalic-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'barracuda_regular';
-    src: url('https://imveeru.github.io/blob/main/assets/fonts/barracuda-regular-webfont.woff2') format('woff2'),
-         url('https://imveeru.github.io/blob/main/assets/fonts/barracuda-regular-webfont.woff') format('woff');
+    font-family: barracuda_regular;
+    src: url(/assets/fonts/barracuda-regular-webfont.woff2) format('woff2'),
+         url(/assets/fonts/barracuda-regular-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -93,7 +93,7 @@ body{
 }
 .title{
     font-size: 10vw;
-    font-family: 'barracudabold';
+    font-family: barracudabold;
     text-transform: uppercase;
     font-weight: strong;
 }
