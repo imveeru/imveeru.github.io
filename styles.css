@@ -20,7 +20,7 @@
 
 body{
     overflow: hidden;
-    font-family: 'Kenoky';
+    font-family: 'KENOKY';
 }
 .loader{
     position: absolute;
@@ -83,7 +83,8 @@ body{
 }
 .subtitle{
     font-size: 4vw;
-    font-family: 'KenokyLight';
+    font-family: 'KENOKY';
+    font-weight:lighter;
     color:white;
 }
 
