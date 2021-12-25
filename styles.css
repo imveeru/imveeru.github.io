@@ -6,16 +6,25 @@
 @import url('http://fonts.cdnfonts.com/css/kenoky');
 
 @font-face {
-    font-family: 'barracudaitalic';
-    src: url('barracuda-italic-webfont.woff2') format('woff2')
+    font-family: 'barracudabold';
+    src: url('barracuda-bold-webfont.woff2') format('woff2'),
+         url('barracuda-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'barracudabold_italic';
-    src: url('barracuda-bolditalic-webfont.woff2') format('woff2')
+    src: url('barracuda-bolditalic-webfont.woff2') format('woff2'),
+         url('barracuda-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: 'barracudabold';
-    src: url('barracuda-bold-webfont.woff2') format('woff2')
+    font-family: 'barracudaitalic';
+    src: url('barracuda-italic-webfont.woff2') format('woff2'),
+         url('barracuda-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
