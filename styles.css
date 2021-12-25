@@ -1,7 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: none;
+    box-sizing:border-box;
 }
+
+:root {
+    --sandal: #f5e0bb;
+    --white: #ffffff;
+    --black:#1b1b1b;
+  }
 
 @font-face {
     font-family: kenoky_light;
@@ -49,7 +57,7 @@ body{
     width: 100%;
     height: 100vh;
     z-index: 50;
-    background: #f5e0bb;
+    background:var(--sandal);
 }
 #percent{
     display: flex;
@@ -57,7 +65,7 @@ body{
     justify-content: center;
     height: 100vh;
     width: 100%;
-    color: #f5e0bb;    
+    color: var(--sandal);    
     font-size: 10vw;
     font-weight: lighter;
     font-style: italic;
@@ -90,9 +98,9 @@ body{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image:url(/assets/images/web\ new.jpg);
+    background: #1b1b1b;
     flex-direction: column;
-    color: #f5e0bb;
+    color: var(--sandal);
     z-index: 50;
 }
 
@@ -112,7 +120,7 @@ a{
     align-items: center;
     justify-content: center;
     width: 100%;
-    color: #f5e0bb;
+    color: var(--sandal);
     z-index: 51;
     transition: top 0.3s;
 }
@@ -126,7 +134,7 @@ a{
     margin-left: 20px;
 }
 #nav-bar .menu-items li a{
-    color: #f5e0bb;
+    color: var(--sandal);
     text-decoration: none;
     font-size: 20px;
     font-weight: lighter;
@@ -140,11 +148,40 @@ a{
     font-family: barracudabold,'Helvetica Neue';
     text-transform: uppercase;
     font-weight: strong;
+    margin-top: 20px;
+    padding: 0;
+    color: var(--sandal);
 }
 .subtitle{
     font-size: 4vw;
     font-family: kenoky_light;
     color:white;
+    line-height: 0.8;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hand-wave{
+    width:3%;
+    transform: scaleX(-1);
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    margin: 0px 15px 0px 10px ;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
 
 .noise::before{
@@ -161,3 +198,49 @@ a{
     background-image: url(./assets/noise.gif) ;
     background-blend-mode:screen;
 }
+
+/*======= CURSOR ========*/
+.cursor {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--sandal);
+    /* background-color: rgba(255, 255, 255, 0.356); */
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+  }
+  .cursor::after,
+  .cursor::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:var(--sandal);
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    mix-blend-mode: difference;
+  }
+  .cursor::before {
+    background-color: var(--sandal);
+  }
+  .cursor.click::before {
+    animation: click 1s ease forwards;
+    background-color: var(--sandal);
+  }
+  @keyframes click {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(5);
+    }
+  }
