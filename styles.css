@@ -3,62 +3,8 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: "KenokyBlack";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-Black.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyBold";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-Bold.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyDemiBold";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-DemiBold.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyExtraBold";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-ExtraBold.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyExtraLight";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-ExtraLight.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyHeavy";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-Heavy.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyLight";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-Light.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyMedium";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-Medium.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyNormal";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-Normal.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyRegular";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-Regular.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokySemiBold";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-SemiBold.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyThin";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-Thin.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyUltraBold";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-UltraBold.woff2") format("woff2"),
-}
-@font-face {
-    font-family: "KenokyUltraLight";
-    src: url("https://imveeru.github.io/assets/fonts/KENOKY-UltraLight.woff2") format("woff2"),
-}
+@import url('http://fonts.cdnfonts.com/css/kenoky');
+
 @font-face {
     font-family: 'barracudaitalic';
     src: url('barracuda-italic-webfont.woff2') format('woff2')
