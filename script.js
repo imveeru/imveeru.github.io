@@ -4,7 +4,7 @@ const load = gsap.timeline({
 load.to("#percent , #bar", {
     duration: .2,
     opacity: 0,
-    zIndex: -1
+    zIndenav: -1
 })
 load.to(".progress",{
     duration: .8,
@@ -37,6 +37,18 @@ function frame(){
         document.getElementById("percent").innerHTML = width + '%';
     }
 }
+
 window.onload = function(){
-    loading();
+    loading()
 }
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("nav-bar").style.top = "0";
+  } else {
+    document.getElementById("nav-bar").style.top = "-50px";
+  }
+} 
+
