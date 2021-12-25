@@ -143,6 +143,7 @@ a{
     text-decoration: underline;
 }
 
+
 .title{
     font-size: 10vw;
     font-family: barracudabold,'Helvetica Neue';
@@ -150,10 +151,12 @@ a{
     font-weight: strong;
     margin-top: 20px;
     padding: 0;
+    display: flex;
+    justify-content: center;
     color: var(--sandal);
 }
 .subtitle{
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: kenoky_light;
     color:white;
     line-height: 0.8;
@@ -163,7 +166,7 @@ a{
 }
 
 .hand-wave{
-    width:3%;
+    width:4%;
     transform: scaleX(-1);
     animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s;        /* Change to speed up or slow down */
@@ -201,7 +204,7 @@ a{
 
 /*======= CURSOR ========*/
 .cursor {
-    z-index: 100;
+    z-index: 100000000;
     position: absolute;
     top: 0;
     left: 0;
@@ -243,4 +246,34 @@ a{
       opacity: 0;
       transform: translate(-50%, -50%) scale(5);
     }
+  }
+
+  .btn-container{
+      display: flex;
+      justify-content: center;
+      padding:5rem 0 1rem 0;
+      width: 100%;
+  }
+
+  .scroll-down-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75em 1.5em;
+    background:none;
+    outline: none;
+    border: 1px solid var(--sandal);
+    color: var(--sandal);
+    font-family: kenoky_light;
+    font-size:1.5vw;
+    border-radius:50%;
+  }
+
+  .scroll-down-btn>i{
+      margin-top: 5px;
+  }
+
+  .scroll-down-btn:hover{
+      color:var(--black);
+      background: var(--sandal);
   }
