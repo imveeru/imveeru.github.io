@@ -3,3 +3,8 @@
     padding:0;
 }
 
+:root {
+    --sandal: #f5e0bb;
+    --white: #ffffff;
+    --black:#1b1b1b;
+}
