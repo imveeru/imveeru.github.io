@@ -7,4 +7,31 @@
     --sandal: #f5e0bb;
     --white: #ffffff;
     --black:#1b1b1b;
+    --padding_lr:5em;
+    --padding_tb:1em;
+}
+
+@font-face {
+    font-family: kenoky_light;
+    src: url(/assets/fonts/KENOKY-Light.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-bar{
+    background:var(--black);
+    color: var(--sandal);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:var(--padding_tb) var(--padding_lr);
+}
+.navbar-img{
+    width:10%;
+    filter: invert(89%) sepia(31%) saturate(322%) hue-rotate(336deg) brightness(100%) contrast(93%);
+}
+
+.navbar-txt, .navbar-menu{
+    font-family: kenoky_light;
+    font-size:2em;
 }
