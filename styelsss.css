@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+:root {
+    --sandal: #f5e0bb;
+    --white: #ffffff;
+    --black:#1b1b1b;
+  }
+
+@font-face {
+    font-family: kenoky_light;
+    src: url(/assets/fonts/KENOKY-Light.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: barracudabold;
+    src: url(/assets/fonts/barracuda-bold-webfont.woff2) format('woff2'),
+         url(/fonts/barracuda-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: barracudabold_italic;
+    src: url(/assets/fonts/barracuda-bolditalic-webfont.woff2) format('woff2'),
+         url(/assets/fonts/barracuda-bolditalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: barracudaitalic;
+    src: url(/assets/fonts/barracuda-lightitalic-webfont.woff2) format('woff2'),
+         url(/assets/fonts/barracuda-lightitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: barracuda_regular;
+    src: url(/assets/fonts/barracuda-regular-webfont.woff2) format('woff2'),
+         url(/assets/fonts/barracuda-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: kenoky_light;
+    background:#1b1b1b
+}
+
+.title{
+    font-size: 10vw;
+    font-family: barracudabold,'Helvetica Neue';
+    font-weight: strong;
+    padding: 0;
+    color: var(--sandal);
+}
+
+.main-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subtitle1,.subtitle2{
+    font-size: 5vw;
+    font-family: kenoky_light;
+    color:white;
+    line-height: 0.8;
+}
+
+.subtitle1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle2{
+    
+}
+
+.hand-wave{
+    width:4%;
+    transform: scaleX(-1);
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    margin: 0px 15px 0px 10px ;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.noise::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    /* you can control opacity of noise  */
+    opacity: .04;  
+    z-index: 1000;
+    pointer-events: none;
+    background-image: url(./assets/noise.gif) ;
+    background-blend-mode:screen;
+}
+
+/*======= CURSOR ========*/
+.cursor {
+    z-index: 100000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--sandal);
+    /* background-color: rgba(255, 255, 255, 0.356); */
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+  }
+  .cursor::after,
+  .cursor::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:var(--sandal);
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    mix-blend-mode: difference;
+  }
+  .cursor::before {
+    background-color: var(--sandal);
+  }
+  .cursor.click::before {
+    animation: click 1s ease forwards;
+    background-color: var(--sandal);
+  }
+  @keyframes click {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(5);
+    }
+  }
+
+  .btn-container{
+      display: flex;
+      justify-content: center;
+  }
+
+  .scroll-down-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vw 3vw;
+    background:none;
+    outline: none;
+    border: 1px solid var(--sandal);
+    color: var(--sandal);
+    font-family: kenoky_light;
+    font-size:2vw;
+    border-radius:50%;
+  }
+
+  .scroll-down-btn>i{
+      margin-top: 5px;
+  }
+
+  .scroll-down-btn:hover{
+      color:var(--black);
+      background: var(--sandal);
+  }
