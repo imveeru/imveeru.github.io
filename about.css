@@ -13,7 +13,7 @@
       Start of custom Webflow CSS
       ========================================================================== */
    body {
-     background-color: #2148e6;
+     background-color: #1e1e1e;
      font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
      color: #333;
      font-size: 14px;
@@ -26,7 +26,7 @@
      padding-left: 41px;
      background-color: transparent;
      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-     color: #2816f3;
+     color: #1e1e1e;
      font-size: 45px;
      line-height: 55px;
      font-weight: 600;
@@ -74,7 +74,7 @@
      -webkit-align-items: center;
      -ms-flex-align: center;
      align-items: center;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    .h1-white {
@@ -243,7 +243,7 @@
    
    .h4-white.left.stroke {
      border: 1px none #000;
-     color: #2148e6;
+     color: #1e1e1e;
      font-size: 60px;
      line-height: 60px;
    }
@@ -656,7 +656,7 @@
      border-color: #f6f2d8;
      background-color: #f6f2d8;
      font-family: roc-grotesk-wide, sans-serif;
-     color: #2148e6;
+     color: #1e1e1e;
      line-height: 14px;
      font-weight: 500;
      letter-spacing: 1px;
@@ -701,7 +701,7 @@
    .navbar.solid {
      z-index: 500;
      border-bottom: 1px solid #f6f2d8;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
      box-shadow: none;
      cursor: none;
    }
@@ -817,7 +817,7 @@
      display: none;
      width: 0px;
      height: 0px;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    .nav-container {
@@ -1082,7 +1082,7 @@
      width: auto;
      height: 1px;
      margin-top: 0px;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
      opacity: 1;
      -webkit-backface-visibility: visible;
      backface-visibility: visible;
@@ -1096,7 +1096,7 @@
    .mask-blue.image {
      border-style: solid;
      border-width: 10px;
-     border-color: #2148e6;
+     border-color: #1e1e1e;
    }
    
    .mask-blue.ipad-var {
@@ -2449,7 +2449,7 @@
      width: 70px;
      height: 70px;
      margin-top: -173px;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    .div-rotate-title.hidden.var {
@@ -2748,7 +2748,7 @@
      z-index: 2;
      width: 1%;
      height: 100%;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
      -webkit-perspective-origin: 100% 50%;
      perspective-origin: 100% 50%;
      -webkit-transform-origin: 100% 50%;
@@ -2793,7 +2793,7 @@
      grid-template-columns: 1fr 1fr;
      -ms-grid-rows: auto auto;
      grid-template-rows: auto auto;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    .image-19 {
@@ -3690,7 +3690,7 @@
      width: 90vw;
      margin-right: 5vw;
      margin-left: 5vw;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
      background-image: none;
    }
    
@@ -3836,7 +3836,7 @@
      -ms-flex-pack: center;
      justify-content: center;
      border-top: 1px solid #f6f2d8;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
      cursor: none;
    }
    
@@ -3976,7 +3976,7 @@
      bottom: 0%;
      z-index: 3;
      padding-bottom: 0px;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    .anim-title-beige.beige {
@@ -3997,7 +3997,7 @@
      right: 0%;
      bottom: 0%;
      z-index: 4;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    .molitor-title-overlay-2 {
@@ -4038,7 +4038,7 @@
      right: 0%;
      bottom: 0%;
      display: none;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
      opacity: 1;
    }
    
@@ -4265,8 +4265,8 @@
      right: 0%;
      bottom: 0%;
      z-index: 2;
-     background-image: -webkit-gradient(linear, left bottom, left top, from(#2148e6), color-stop(24%, rgba(33, 72, 230, 0.91)), to(rgba(33, 72, 230, 0)));
-     background-image: linear-gradient(0deg, #2148e6, rgba(33, 72, 230, 0.91) 24%, rgba(33, 72, 230, 0));
+     background-image: -webkit-gradient(linear, left bottom, left top, from(#1e1e1e), color-stop(24%, rgba(33, 72, 230, 0.91)), to(rgba(33, 72, 230, 0)));
+     background-image: linear-gradient(0deg, #1e1e1e, rgba(33, 72, 230, 0.91) 24%, rgba(33, 72, 230, 0));
    }
    
    .row-izclean-exploration {
@@ -4402,7 +4402,7 @@
      margin-left: 0px;
      padding: 0px;
      font-family: roc-grotesk-wide, sans-serif;
-     color: #2148e6;
+     color: #1e1e1e;
      font-size: 6vw;
      line-height: 6vw;
      font-weight: 600;
@@ -4506,7 +4506,7 @@
      -webkit-transition: letter-spacing 200ms ease;
      transition: letter-spacing 200ms ease;
      font-family: roc-grotesk-wide, sans-serif;
-     color: #2148e6;
+     color: #1e1e1e;
      font-size: 18px;
      line-height: 1em;
      font-weight: 600;
@@ -4556,7 +4556,7 @@
      margin-left: 0px;
      padding: 0px;
      font-family: roc-grotesk-wide, sans-serif;
-     color: #2148e6;
+     color: #1e1e1e;
      font-size: 4vw;
      line-height: 1em;
      font-weight: 500;
@@ -4612,7 +4612,7 @@
      -ms-grid-row-align: center;
      align-self: center;
      font-family: roc-grotesk-wide, sans-serif;
-     color: #2148e6;
+     color: #1e1e1e;
      font-size: 1.8vw;
      line-height: 1em;
      font-weight: 500;
@@ -4654,7 +4654,7 @@
      -ms-flex-align: stretch;
      align-items: stretch;
      border-bottom: 1px solid #f6f2d8;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    .div-menu-default {
@@ -4856,7 +4856,7 @@
      right: 0%;
      bottom: 0%;
      height: 4px;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    .link-block-project-square {
@@ -4999,7 +4999,7 @@
      -ms-flex-align: center;
      align-items: center;
      font-family: Inter, sans-serif;
-     color: #2148e6;
+     color: #1e1e1e;
      font-size: 16px;
      font-weight: 300;
    }
@@ -5039,14 +5039,14 @@
      align-items: center;
      border-style: solid none solid solid;
      border-width: 1px;
-     border-color: #2148e6;
+     border-color: #1e1e1e;
      background-color: #f6f2d8;
    }
    
    .repeat-text-style {
      position: relative;
      font-family: roc-grotesk-wide, sans-serif;
-     color: #2148e6;
+     color: #1e1e1e;
      font-size: 3.17vw;
      line-height: 44px;
      font-weight: 500;
@@ -5103,7 +5103,7 @@
      display: none;
      width: 50%;
      height: 100%;
-     background-color: #2148e6;
+     background-color: #1e1e1e;
    }
    
    @media screen and (min-width: 1280px) {
@@ -5228,8 +5228,8 @@
      }
    
      .overlay-gradient {
-       background-image: -webkit-gradient(linear, left bottom, left top, from(#2148e6), color-stop(24%, rgba(33, 72, 230, 0.91)), to(rgba(33, 72, 230, 0)));
-       background-image: linear-gradient(0deg, #2148e6, rgba(33, 72, 230, 0.91) 24%, rgba(33, 72, 230, 0));
+       background-image: -webkit-gradient(linear, left bottom, left top, from(#1e1e1e), color-stop(24%, rgba(33, 72, 230, 0.91)), to(rgba(33, 72, 230, 0)));
+       background-image: linear-gradient(0deg, #1e1e1e, rgba(33, 72, 230, 0.91) 24%, rgba(33, 72, 230, 0));
      }
    }
    
@@ -5581,7 +5581,7 @@
      .navbar-2 {
        width: 100vw;
        height: 80px;
-       background-color: #2148e6;
+       background-color: #1e1e1e;
      }
    
      .div-menu-default {
@@ -6110,7 +6110,7 @@
      }
    
      .navbar.solid {
-       background-color: #2148e6;
+       background-color: #1e1e1e;
      }
    
      .logo {
@@ -6634,7 +6634,7 @@
        border-style: none none none solid;
        border-width: 0px 0px 0px 1px;
        border-color: #000 #000 #000 #f6f2d8;
-       background-color: #2148e6;
+       background-color: #1e1e1e;
        box-shadow: none;
        opacity: 1;
      }
@@ -7374,7 +7374,7 @@
      }
    
      .navbar.solid {
-       background-color: #2148e6;
+       background-color: #1e1e1e;
      }
    
      .logo {
