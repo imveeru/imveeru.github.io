@@ -52,13 +52,13 @@
          .transform { -webkit-text-fill-color: transparent; 
          -webkit-text-stroke: 1px #F6F2D8; 
          } 
-         .outlined { color: transparent; 
-         -webkit-text-stroke: 1px #2148E6; 
+         .outlined { color: #1e1e1e; 
+         -webkit-text-stroke: 1px #1e1e1e; 
          transition: color 0.1s;
          } 
-         .outlined:hover { color: #2148e6; 
+         .outlined:hover { color: #1e1e1e; 
          } 
-         .outlined.w--current { color: #2148e6;
+         .outlined.w--current { color: #1e1e1e;
          letter-spacing: 6px; 
          } 
       </style>
@@ -135,12 +135,12 @@
             </div>
             <div class="clear-inline-state hero-section"></div>
             <div class="text-line3">
-               <h2 data-w-id="f9f80cca-3b58-5f7e-f0ba-957785ded532" style="opacity:0" class="h2-white intro">Developer</h2>
+               <h2 data-w-id="f9f80cca-3b58-5f7e-f0ba-957785ded532" style="opacity:0" class="h2-white intro">a Developer</h2>
                <div data-w-id="619cef0f-8d1c-102e-7a31-0f766546927f" style="-webkit-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="anim-title-beige beige"></div>
             </div>
             <div class="clear-inline-state hero-section"></div>
             <div class="text-line4">
-               <h4 data-w-id="9b76dc64-9b77-d74a-4ede-dd9a151a77bc" style="opacity:0" class="h2-white intro">Designer</h4>
+               <h4 data-w-id="9b76dc64-9b77-d74a-4ede-dd9a151a77bc" style="opacity:0" class="h2-white intro">& a Designer.</h4>
                <div data-w-id="5ec6fcff-6bf4-2e9f-7df6-a0023a8db678" style="-webkit-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="anim-title-beige beige"></div>
             </div>
          </div>
@@ -299,6 +299,20 @@
          function toggleScrolling() {
            $('html').toggleClass('no-scroll');
          }
+         document.onkeydown = function(e) {
+            if(event.keyCode == 123) {
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+            return false;
+            }
+            }
       </script>
    </body>
 </html>
