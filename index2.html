@@ -27,9 +27,7 @@
                 fontSize:{
                   'title':'4.5rem',
                   'title-sm':'2.5rem',
-                  'subtitle':'3rem',
-                  'subtitle-sm':'2.25rem',
-                  'input':'2.5rem',
+                  'subtitle':'1.2rem',
                   'body':'1.1rem',
                   'body-sm':'1rem'
                 },
@@ -49,8 +47,13 @@
 <body class="bg-dark">
 
     <!-- Navbar -->
-    <section class="px-[10%] flex border-b-2 border-light py-8">
+    <section class="px-[10%] flex border-b-2 border-light py-6 justify-between">
         <img class="w-24 h-auto" src="assets/barcode.svg">
+        <div class="hidden lg:flex gap-10 flex-row">
+            <p class="font-title text-light text-subtitle cursor-pointer hover:tracking-[0.3rem]">Home</p>
+            <p class="font-title text-light text-subtitle cursor-pointer hover:tracking-[0.3rem] opacity-60 hover:opacity-100">ABOUT</p>
+            <p class="font-title text-light text-subtitle cursor-pointer hover:tracking-[0.3rem] opacity-60 hover:opacity-100">PROJECTS</p>
+        </div>
     </section>
 
     <!-- Main Hero Section -->
