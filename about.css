@@ -80,7 +80,7 @@ a{
    .h1-white {
      position: relative;
      z-index: 10;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 160px;
      line-height: 140px;
@@ -120,7 +120,7 @@ a{
      display: inline;
      overflow: visible;
      margin-bottom: 20px;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 100px;
      line-height: 100px;
@@ -160,7 +160,7 @@ a{
    }
    
    .heading-2 {
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 80px;
      line-height: 80px;
@@ -171,7 +171,7 @@ a{
      z-index: 12;
      display: inline-block;
      margin-bottom: 40px;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 80px;
      line-height: 80px;
@@ -224,7 +224,7 @@ a{
    .h4-white {
      margin-top: 24px;
      margin-bottom: 24px;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 60px;
      line-height: 60px;
@@ -640,7 +640,7 @@ a{
    }
    
    .stroke {
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 24px;
      line-height: 28px;
@@ -655,7 +655,7 @@ a{
      border-width: 1px;
      border-color: #f6f2d8;
      background-color: #f6f2d8;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #1e1e1e;
      line-height: 14px;
      font-weight: 500;
@@ -853,7 +853,7 @@ a{
      padding: 0px;
      border: 0px none transparent;
      opacity: 1;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      line-height: 14px;
      font-weight: 500;
@@ -1486,7 +1486,7 @@ a{
    
    .paragraph-2 {
      padding-right: 4%;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 36px;
      line-height: 52px;
@@ -2124,7 +2124,7 @@ a{
    .title-project {
      margin-top: 20%;
      margin-bottom: 5%;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 70px;
      line-height: 1em;
@@ -2588,7 +2588,7 @@ a{
      margin-bottom: 0px;
      margin-left: 16px;
      opacity: 0.4;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 36px;
      line-height: 23px;
@@ -3722,7 +3722,7 @@ a{
    }
    
    .text-block-3 {
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 32px;
      line-height: 42px;
@@ -3730,7 +3730,7 @@ a{
    }
    
    .roc-wide-thanks {
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #f6f2d8;
      font-size: 24px;
      line-height: 32px;
@@ -4402,7 +4402,7 @@ a{
      margin-right: 0px;
      margin-left: 0px;
      padding: 0px;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #1e1e1e;
      font-size: 6vw;
      line-height: 6vw;
@@ -4506,7 +4506,7 @@ a{
      margin-left: 6px;
      -webkit-transition: letter-spacing 200ms ease;
      transition: letter-spacing 200ms ease;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #1e1e1e;
      font-size: 18px;
      line-height: 1em;
@@ -4556,7 +4556,7 @@ a{
      margin-right: 0px;
      margin-left: 0px;
      padding: 0px;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #1e1e1e;
      font-size: 4vw;
      line-height: 1em;
@@ -4612,7 +4612,7 @@ a{
      -ms-flex-item-align: center;
      -ms-grid-row-align: center;
      align-self: center;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #1e1e1e;
      font-size: 1.8vw;
      line-height: 1em;
@@ -5046,7 +5046,7 @@ a{
    
    .repeat-text-style {
      position: relative;
-     font-family: roc-grotesk-wide, sans-serif;
+     font-family: "Macaria", sans-serif;
      color: #1e1e1e;
      font-size: 3.17vw;
      line-height: 44px;
@@ -6294,7 +6294,7 @@ a{
        -webkit-transform: translate(46%, -9%);
        -ms-transform: translate(46%, -9%);
        transform: translate(46%, -9%);
-       font-family: roc-grotesk-wide, sans-serif;
+       font-family: "Macaria", sans-serif;
        color: #f6f2d8;
        font-size: 42px;
        line-height: 31px;
