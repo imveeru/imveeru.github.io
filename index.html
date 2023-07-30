@@ -13,64 +13,43 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              gridTemplateRows: {
+                // Simple 8 row grid
+               '12': 'repeat(12, minmax(0, 1fr))',
               }
             }
           }
         }
       </script>
-    <!-- Hamburger icon -->
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <title>Veeramanohar</title>
 </head>
-<body class="bg-black">
-    <!-- NavBar -->
-    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-        <div class="flex justify-between items-center ">
-          <span class="text-2xl font-[Poppins] cursor-pointer">
-            LOGO
-          </span>
-    
-          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-          </span>
+<body class="">
+    <div class="grid grid-cols-12 w-screen h-screen">
+        <div class="bg-red-500 hidden md:block flex flex-col justify-between p-4 h-full">
+            <p>logo</p>
+            <p>logo</p>
         </div>
-    
-        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full h-[90%] left-0 md:w-auto md:py-0 pt-4 md:pl-0 pl-4 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
-          </li>
-    
-          <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
-            Get started
-          </button>
-        <h2 class=""></h2>
-        </ul>
-    </nav>
 
-    <div>
+        <div class="col-span-12 md:col-span-11 flex flex-col">
+            <div class="hidden md:flex bg-yellow-300 basis-1/12 py-8 px-12 flex-row justify-around">
+                <p>Home</p>
+                <p>Home</p>
+                <p>Home</p>
+                <p>Home</p>
+            </div>
 
+            <div class="md:hidden bg-yellow-300 basis-1/12 py-8 px-12 flex flex-row justify-between">
+                <p>logo</p>
+                <p>ham</p>
+            </div>
+
+            <div class="bg-green-400">
+
+            </div>
+
+        </div>
     </div>
-
-    <script>
-        //Navbar responsive function
-        function Menu(e){
-          let list = document.querySelector('ul');
-          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-        }
-      </script>
 </body>
 </html>
