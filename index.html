@@ -22,19 +22,58 @@
           }
         }
       </script>
+      <style>
+        .fixed-row {
+            position: sticky;
+            top: 0;
+        }
+
+        .fixed-column {
+            position: sticky;
+            left: 0;
+            top:0;  
+            overflow-y: hidden;
+        }
+
+        .scrollable-section {
+            height: calc(100vh - 4rem);
+            overflow-y: scroll;
+        }
+
+        /* Hide scrollbar for Chrome, Safari, and Opera */
+        ::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge, and Firefox */
+        body {
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+          
+        }
+
+        .gradient-bg{
+            background-color: rgb(30, 41, 59);
+            background-image: radial-gradient(at 27% 65%, rgb(24, 24, 27) 0, transparent 70%), radial-gradient(at 100% 0%, rgb(49, 46, 129) 0, transparent 45%);      
+        }
+
+    </style>
 
     <title>Veeramanohar</title>
 </head>
-<body class="">
-    <div class="grid grid-cols-12 w-screen h-screen">
-        <div class="bg-red-500 hidden md:flex hidden flex-col items-center justify-between px-4 py-8 h-full">
+<body class="gradient-bg">
+    <!-- overall container -->
+    <div class="grid grid-cols-12">
+        <!-- logo and copyright -->
+        <div class="fixed-column overflow-y-hidden text-white border-r border-white/20 hidden md:flex hidden flex-col items-center justify-between px-4 py-8 h-full">
+            <div>logo</div>
             <div>logo</div>
             <div>logo</div>
         </div>
 
         <div class="col-span-12 md:col-span-11 flex flex-col">
             <!-- desktop nav -->
-            <div class="hidden md:flex bg-yellow-300 basis-1/12 py-8 px-12 flex-row justify-around">
+            <div class="hidden fixed-row md:flex text-white border-b border-white/20 basis-1/12 py-8 px-12 flex-row justify-around">
                 <p>Home</p>
                 <p>Home</p>
                 <p>Home</p>
@@ -42,13 +81,16 @@
             </div>
 
             <!-- Mobile nav -->
-            <div class="md:hidden bg-yellow-300 basis-1/12 p-6 flex flex-row justify-between">
+            <div class="md:hidden fixed-row border-b border-white/20 text-white basis-1/12 p-6 flex flex-row justify-between">
                 <p>logo</p>
                 <p>ham</p>
             </div>
 
-            <div class="bg-green-400">
-
+            <!-- Main content -->
+            <div class="scrollable-section">
+                <div class="text-white font-bold p-4">
+                    hi
+                </div>
             </div>
 
         </div>

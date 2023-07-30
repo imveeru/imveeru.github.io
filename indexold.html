@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .fixed-row {
+            position: sticky;
+            top: 0;
+        }
+
+        .fixed-column {
+            position: sticky;
+            left: 0;
+        }
+
+        .scrollable-section {
+            height: calc(100vh - 4rem);
+            overflow-y: scroll;
+        }
+    </style>
+    <title>12x12 Grid</title>
+</head>
+
+<body class="bg-red-500">
+    <div class="flex flex-col">
+        <div class="flex fixed-row bg-yellow-500">
+            <!-- <div class="w-1/12 h-16 fixed-column bg-black"></div> -->
+            <div class="w-12/12 h-16"></div>
+        </div>
+        <div class="flex flex-col scrollable-section">
+            <div class="flex">
+                <div class="w-1/12 h-full fixed-column bg-black"></div>
+                <div class="w-11/12 h-16"></div>
+            </div>
+            <div class="grid grid-rows-11 grid-cols-12 gap-0">
+                <div class="col-span-1 row-span-11 bg-black"></div>
+                <div class="col-span-11 row-span-11 bg-red-500 flex flex-wrap">
+                    <!-- Remaining red cells -->
+                    <div class="w-1/11 h-16" repeat(121)></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
