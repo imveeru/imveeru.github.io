@@ -12,17 +12,24 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                highlight: '#EB5939',
               },
               gridTemplateRows: {
                 // Simple 8 row grid
                '12': 'repeat(12, minmax(0, 1fr))',
+              },
+              fontFamily:{
+                'title':"Chesna Medium",
+                'special': "Major Mono Display",
+                "content": "Poppins"
               }
             }
           }
         }
       </script>
       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
         .fixed-row {
             position: sticky;
             top: 0;
@@ -53,17 +60,34 @@
         }
 
         .gradient-bg{
-            background-color: rgb(22, 12, 47);
-            background-image: radial-gradient(at 27% 65%, rgb(9, 9, 9) 0, transparent 70%),
-                                radial-gradient(at 100% 0%, rgb(37, 34, 108) 0, transparent 35%),
-                                url(data:image/png;base64,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);      
+            background-color: rgb(46, 12, 60);
+            background-image: radial-gradient(at 27% 65%, rgb(0, 0, 0) 0, transparent 90%),
+                                radial-gradient(at 100% 0%, rgb(17, 14, 79) 0, transparent 35%);
+                                /*url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);      */
+        }
+
+        .position-center{
+          position: absolute;
+          transform: translate(-40%, -50%);
+          top: 50%;
+          left: 40%;
+        }
+
+        @font-face {
+          font-family: "Chesna Medium";
+          src: url('/assets/fonts/chesnagrotesk-medium.otf');
+        }
+
+        @font-face {
+          font-family: "Chesna Light";
+          src: url('/assets/fonts/chesnagrotesk-thin.otf');
         }
 
     </style>
 
     <title>Veeramanohar</title>
 </head>
-<body class="gradient-bg">
+<body class="gradient-bg font-title">
     <!-- overall container -->
     <div class="grid grid-cols-12">
         <!-- logo and copyright -->
@@ -75,11 +99,12 @@
 
         <div class="col-span-12 md:col-span-11 flex flex-col">
             <!-- desktop nav -->
-            <div class="hidden fixed-row md:flex text-white border-b border-white/20 basis-1/12 py-8 px-12 flex-row justify-around">
-                <p>Home</p>
-                <p>Home</p>
-                <p>Home</p>
-                <p>Home</p>
+            <div class="hidden font-content fixed-row md:flex text-white/50  border-b border-white/20 basis-1/12 py-8 px-12
+                        bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 flex-row justify-around">
+                <span class="hover:text-white hover:cursor-pointer">HOME</span>
+                <span class="hover:text-white hover:cursor-pointer">ABOUT</span>
+                <span class="hover:text-white hover:cursor-pointer">WORKS</span>
+                <span class="hover:text-white hover:cursor-pointer">CONTACT</span>
             </div>
 
             <!-- Mobile nav -->
@@ -90,9 +115,41 @@
 
             <!-- Main content -->
             <div class="scrollable-section">
-                <div class="text-white font-bold p-4">
-                    hi
+
+                <!-- Hero section -->
+                <div class="md:h-full text-white flex flex-col px-6 md:px-16 items-center md:justify-center p-8">                    
+                    <div class="font-title font-bold flex flex-col gap-y-4">                      
+                      <span class="tracking-widest font-special text-white text-left">
+                        <img class="inline h-5 mr-2 ml-2" src="/assets/images/waving-hand.webp"/>Hi, i'M VeeRAMAnoHAR
+                      </span> 
+                      <div class="tracking-tight text-4xl lg:text-9xl">
+                        <p>A <span class="text-highlight">Creative</span></p>
+                        <p>Developer &</p>
+                        <p><span class="text-highlight">Tech</span> Enthusiast.</p>
+                      </div>
+                    </div>
                 </div>
+
+                <div class="h-full text-white flex flex-col px-16 justify-center p-8">
+                  <p class="font-mono text-left">👋 HELLO, I'M VEERAMANOHAR</p>
+                  <div class="font-sans font-bold text-7xl">
+                    <p>A creative developer</p>
+                    <p>building solutions with</p>
+                    <p>state-of-the-art technology.</p>
+                  </div>
+              </div>
+
+              <div class="h-full text-white flex flex-col px-16 justify-center p-8">
+                <p class="font-mono text-left">👋 HELLO, I'M VEERAMANOHAR</p>
+                <div class="font-sans font-bold text-7xl">
+                  <p>A creative developer</p>
+                  <p>building solutions with</p>
+                  <p>state-of-the-art technology.</p>
+                </div>
+            </div>
+
+                  
+                
             </div>
 
         </div>
