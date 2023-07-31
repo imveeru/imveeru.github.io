@@ -92,15 +92,21 @@
     <div class="grid grid-cols-12">
         <!-- logo and copyright -->
         <div class="fixed-column overflow-y-hidden text-white border-r border-white/20 hidden md:flex hidden flex-col items-center justify-between px-4 py-8 h-full">
-            <div>logo</div>
-            <div>logo</div>
-            <div>logo</div>
+            <div><img class="w-16 opacity-70 hover:opacity-100 hover:fill-highlight" src="/assets/images/logo.svg"/></div>
+            <div class="flex flex-col items-center gap-y-4 justify-center">
+              <div class="bg-white/70 p-0.5 rounded-full"></div>
+              <div class="bg-white/20 p-0.5 rounded-full"></div>
+              <div class="bg-white/20 p-0.5 rounded-full"></div>
+              <div class="bg-white/20 p-0.5 rounded-full"></div>
+              <div class="bg-white/20 p-0.5 rounded-full"></div>
+            </div>
+            <div class="rotate-[-90deg] mb-12"><p class="text-[0.6em] font-special">VeeRAMAnoHAR's<br/>porfolio ©</p></div>
         </div>
 
         <div class="col-span-12 md:col-span-11 flex flex-col">
             <!-- desktop nav -->
             <div class="hidden font-content fixed-row md:flex text-white/50  border-b border-white/20 basis-1/12 py-8 px-12
-                        bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 flex-row justify-around">
+                        bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 flex-row justify-around">
                 <span class="hover:text-white hover:cursor-pointer">HOME</span>
                 <span class="hover:text-white hover:cursor-pointer">ABOUT</span>
                 <span class="hover:text-white hover:cursor-pointer">WORKS</span>
@@ -109,20 +115,20 @@
 
             <!-- Mobile nav -->
             <div class="md:hidden fixed-row border-b border-white/20 text-white basis-1/12 p-6 flex flex-row justify-between">
-                <p>logo</p>
-                <p>ham</p>
+                <div><img class="w-10 opacity-70 hover:opacity-100 hover:fill-highlight" src="/assets/images/logo.svg"/></div>
+                <svg class="w-5 fill-white/70" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.67"><path fill-rule="nonzero" d="M0 0h512v23.91H0V0zm0 327.76h512v23.91H0v-23.91zm0-163.88h512v23.91H0v-23.91z"/></svg>
             </div>
 
             <!-- Main content -->
             <div class="scrollable-section">
 
                 <!-- Hero section -->
-                <div class="md:h-full text-white flex flex-col px-6 md:px-16 items-center md:justify-center p-8">                    
+                <div class="h-[40vh] md:h-full text-white flex flex-col px-6 md:px-16 items-center md:justify-center p-8">                    
                     <div class="font-title font-bold flex flex-col gap-y-4">                      
-                      <span class="tracking-widest font-special text-white text-left">
+                      <span class="tracking-widest font-special text-sm md:text-lg text-white text-left">
                         <img class="inline h-5 mr-2 ml-2" src="/assets/images/waving-hand.webp"/>Hi, i'M VeeRAMAnoHAR
                       </span> 
-                      <div class="tracking-tight text-4xl lg:text-9xl">
+                      <div class="tracking-tight text-5xl lg:text-9xl">
                         <p>A <span class="text-highlight">Creative</span></p>
                         <p>Developer &</p>
                         <p><span class="text-highlight">Tech</span> Enthusiast.</p>
