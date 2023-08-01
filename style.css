@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -63,3 +64,21 @@ body {
     font-family: "Chesna Light";
     src: url('/assets/fonts/chesnagrotesk-thin.otf');
 }
+
+
+.cursor{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: #fff;
+    transition: 0.3%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: exclusion;
+    z-index: 99999999;
+}
+
+/* #hero:hover .cursor{
+    transform: scale(10);
+} */
