@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css"> -->
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Veeramanohar</title>
 
@@ -106,7 +107,6 @@
 
                 </div>
               
-
                 <!-- Skills section -->
                 <div id="skills" class="cursor-default tracking-tight w-full h-[50vh] mb-16 md:mb-2 md:h-full text-white flex flex-col items-center justify-center">
                   <div class="flex-1 font-sans font-bold text-7xl w-full">
@@ -128,7 +128,8 @@
                     </div>
 
                     <div class="group max-w-full text-center text-black hover:bg-highlight border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 transition duration-200
+                                hover:border-highlight px-6 md:px-16 py-4 md:py-6
+                                transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
                                 items-center justify-center">
@@ -142,11 +143,12 @@
                     </div>
 
                     <div class="group max-w-full text-center text-black hover:bg-highlight border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 transition duration-200
+                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 
+                                transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
                                 items-center justify-center">
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">GRAPHIC DESIGN</p>
+                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">RESEARCH</p>
                       <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
                         One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
                       </p>
@@ -156,11 +158,12 @@
                     </div>
 
                     <div class="group max-w-full text-center text-black hover:bg-highlight border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 transition duration-200
+                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 
+                                transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
                                 items-center justify-center">
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">RESEARCH</p>
+                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">GRAPHIC DESIGN</p>
                       <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
                         One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
                       </p>
@@ -170,7 +173,8 @@
                     </div>
 
                     <div class="group max-w-full text-center text-black hover:bg-highlight border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 transition duration-200
+                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 
+                                transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
                                 items-center justify-center">
@@ -217,24 +221,13 @@
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
                           <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
-                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8">
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
                             <div class="cursor-pointer">
                               <p class="font-title md:text-4xl text-2xl">IntelliML</p>
                               <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
                             </div>
                             <div class="hidden md:block cursor-pointer ml-auto">
-                              <svg id="arrow" shape-rendering="geometricPrecision" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.395505 328.852402">
-                                <defs>
-                                  <style>
-                                    .cls-1 {
-                                      fill: #eb5939;
-                                    }
-                                  </style>
-                                </defs>
-                                <rect class="cls-1" x="276.547095" y="69.421739" width="50.84841" height="259.430663"/>
-                                <rect class="cls-1" x="172.255968" y="173.712865" width="50.84841" height="259.430663" transform="translate(-105.748024 501.10837) rotate(-90)"/>
-                                <rect class="cls-1" x="123.444934" y="-36.239411" width="50.84841" height="370.2171" transform="translate(-61.663616 148.869139) rotate(-45)"/>
-                              </svg>
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
                             </div>
                           </div>
                         </div>
@@ -242,24 +235,13 @@
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
                           <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
-                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8">
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
                             <div class="cursor-pointer">
                               <p class="font-title md:text-4xl text-2xl">IntelliML</p>
                               <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
                             </div>
                             <div class="hidden md:block cursor-pointer ml-auto">
-                              <svg id="arrow" shape-rendering="geometricPrecision" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.395505 328.852402">
-                                <defs>
-                                  <style>
-                                    .cls-1 {
-                                      fill: #eb5939;
-                                    }
-                                  </style>
-                                </defs>
-                                <rect class="cls-1" x="276.547095" y="69.421739" width="50.84841" height="259.430663"/>
-                                <rect class="cls-1" x="172.255968" y="173.712865" width="50.84841" height="259.430663" transform="translate(-105.748024 501.10837) rotate(-90)"/>
-                                <rect class="cls-1" x="123.444934" y="-36.239411" width="50.84841" height="370.2171" transform="translate(-61.663616 148.869139) rotate(-45)"/>
-                              </svg>
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
                             </div>
                           </div>
                         </div>
@@ -267,24 +249,13 @@
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
                           <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
-                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8">
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
                             <div class="cursor-pointer">
                               <p class="font-title md:text-4xl text-2xl">IntelliML</p>
                               <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
                             </div>
                             <div class="hidden md:block cursor-pointer ml-auto">
-                              <svg id="arrow" shape-rendering="geometricPrecision" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.395505 328.852402">
-                                <defs>
-                                  <style>
-                                    .cls-1 {
-                                      fill: #eb5939;
-                                    }
-                                  </style>
-                                </defs>
-                                <rect class="cls-1" x="276.547095" y="69.421739" width="50.84841" height="259.430663"/>
-                                <rect class="cls-1" x="172.255968" y="173.712865" width="50.84841" height="259.430663" transform="translate(-105.748024 501.10837) rotate(-90)"/>
-                                <rect class="cls-1" x="123.444934" y="-36.239411" width="50.84841" height="370.2171" transform="translate(-61.663616 148.869139) rotate(-45)"/>
-                              </svg>
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
                             </div>
                           </div>
                         </div>
@@ -292,30 +263,16 @@
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
                           <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
-                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8">
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
                             <div class="cursor-pointer">
                               <p class="font-title md:text-4xl text-2xl">IntelliML</p>
                               <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
                             </div>
                             <div class="hidden md:block cursor-pointer ml-auto">
-                              <svg id="arrow" shape-rendering="geometricPrecision" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.395505 328.852402">
-                                <defs>
-                                  <style>
-                                    .cls-1 {
-                                      fill: #eb5939;
-                                    }
-                                  </style>
-                                </defs>
-                                <rect class="cls-1" x="276.547095" y="69.421739" width="50.84841" height="259.430663"/>
-                                <rect class="cls-1" x="172.255968" y="173.712865" width="50.84841" height="259.430663" transform="translate(-105.748024 501.10837) rotate(-90)"/>
-                                <rect class="cls-1" x="123.444934" y="-36.239411" width="50.84841" height="370.2171" transform="translate(-61.663616 148.869139) rotate(-45)"/>
-                              </svg>
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
                             </div>
                           </div>
                         </div>
-
-                        
-
                         
                       </div>
                   </div>
