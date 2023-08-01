@@ -27,7 +27,7 @@ tailwind.config = {
     }
   }
 
-AOS.init();
+
 
 //text reveal animation
 // let paragraphs = [...document.querySelectorAll('p')];
