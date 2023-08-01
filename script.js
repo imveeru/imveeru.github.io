@@ -33,6 +33,7 @@ document.addEventListener('mousemove', (e)=>{
   (document.querySelector('.cursor')).style.top=e.pageY+'px';
 })
 
+//preloader
 
 //text reveal animation
 // let paragraphs = [...document.querySelectorAll('p')];
