@@ -13,6 +13,15 @@ tailwind.config = {
           'special': "Major Mono Display",
           "nav":"Poppins",
           "content": "Chesna Light"
+        },
+        animation: {
+          marquee: 'marquee 10s linear infinite',
+        },
+        keyframes: {
+          marquee: {
+            '0%': { transform: 'translateX(0%)' },
+            '100%': { transform: 'translateX(-100%)' },
+          },
         }
       }
     }

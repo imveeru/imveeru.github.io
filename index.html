@@ -52,7 +52,7 @@
             <div class="scrollable-section">
 
                 <!-- Hero section -->
-                <div id="hero" class="cursor-default h-[50vh] md:h-full text-white flex flex-col px-6 md:px-16 items-center justify-center">                    
+                <div id="hero" class="cursor-default h-[48dvh] md:h-[90dvh] text-white flex flex-col px-6 md:px-16 items-center justify-center">                    
                     <div class="font-title font-bold flex flex-col gap-y-4">                      
                       <span class="tracking-widest font-special text-sm md:text-lg text-white text-left">
                         <img class="inline h-5 mr-2 ml-2" src="/assets/images/waving-hand.webp"/>Hi, i'M VeeRAMAnoHAR
@@ -65,13 +65,56 @@
                     </div>
                 </div>
 
+                <!-- Marquee -->
+                <div class="text-white/80 relative w-full flex flex-row border-t-2 border-b-2 bg-black/30 md:bg-black/0 border-highlight overflow-x-hidden mb-24 md:mb-44 tracking-tight">
+                  
+                  <div class="py-3 md:py-6 animate-marquee whitespace-nowrap text-white">
+                      <span class="mx-4 text-4xl">Desire</span>
+                      <span class="text-highlight mx-4 text-4xl">✱</span>
+                      <span class="mx-4 text-4xl">Design</span>
+                      <span class="text-highlight mx-4 text-4xl">✱</span>
+                      <span class="mx-4 text-4xl">Develop</span>
+                      <span class="text-highlight mx-4 text-4xl">✱</span>
+                  </div>
+
+                  <div class="py-3 md:py-6 animate-marquee whitespace-nowrap text-white">
+                    <span class="mx-4 text-4xl">Desire</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                    <span class="mx-4 text-4xl">Design</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                    <span class="mx-4 text-4xl">Develop</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                  </div>
+
+                  <div class="py-3 md:py-6 animate-marquee whitespace-nowrap text-white">
+                    <span class="mx-4 text-4xl">Desire</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                    <span class="mx-4 text-4xl">Design</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                    <span class="mx-4 text-4xl">Develop</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                  </div>
+
+                  <div class="py-3 md:py-6 animate-marquee whitespace-nowrap text-white">
+                    <span class="mx-4 text-4xl">Desire</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                    <span class="mx-4 text-4xl">Design</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                    <span class="mx-4 text-4xl">Develop</span>
+                    <span class="text-highlight mx-4 text-4xl">✱</span>
+                  </div>
+
+                </div>
+              
+
                 <!-- Skills section -->
                 <div id="skills" class="cursor-default tracking-tight w-full h-[50vh] mb-16 md:mb-2 md:h-full text-white flex flex-col items-center justify-center">
                   <div class="flex-1 font-sans font-bold text-7xl w-full">
                     <p class="px-6 md:px-16 mb-3 md:text-4xl text-2xl font-title">What do I do? <span class="font-content text-xs text-white/40 hidden md:inline ">(Hover on each topic to see more details)</span></p>
                     <!-- Skill div -->
                     <div class="group max-w-full text-center text-black hover:bg-highlight border-t border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 transition duration-200
+                                hover:border-highlight px-6 md:px-16 py-4 md:py-6
+                                transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
                                 items-center justify-center">
@@ -89,7 +132,7 @@
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
                                 items-center justify-center">
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">ARTIFICIAL INTERLLIGENCE</p>
+                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">ARTIFICIAL INTELLIGENCE</p>
                       <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
                         One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
                       </p>
@@ -145,7 +188,7 @@
 
                 <!-- Selected work -->
                 <div id="work" class="cursor-default tracking-tight w-full mb-8 md:h-full text-white flex flex-col items-center justify-center">
-                  <div class="flex-1 font-sans font-bold text-7xl w-full">
+                  <div class="flex-1 font-bold text-7xl w-full">
                       <p class="px-6 md:px-16 mb-3 md:text-4xl text-2xl font-title">Selected Work
                         <a class="ml-2 cursor-pointer text-base text-highlight hover:underline inline ">
                           View All Works >
@@ -180,7 +223,18 @@
                               <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
                             </div>
                             <div class="hidden md:block cursor-pointer ml-auto">
-                              <svg class="w-10 fill-white/40" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.67"><path fill-rule="nonzero" d="M0 0h512v23.91H0V0zm0 327.76h512v23.91H0v-23.91zm0-163.88h512v23.91H0v-23.91z"/></svg>
+                              <svg id="arrow" shape-rendering="geometricPrecision" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.395505 328.852402">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #eb5939;
+                                    }
+                                  </style>
+                                </defs>
+                                <rect class="cls-1" x="276.547095" y="69.421739" width="50.84841" height="259.430663"/>
+                                <rect class="cls-1" x="172.255968" y="173.712865" width="50.84841" height="259.430663" transform="translate(-105.748024 501.10837) rotate(-90)"/>
+                                <rect class="cls-1" x="123.444934" y="-36.239411" width="50.84841" height="370.2171" transform="translate(-61.663616 148.869139) rotate(-45)"/>
+                              </svg>
                             </div>
                           </div>
                         </div>
@@ -194,7 +248,18 @@
                               <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
                             </div>
                             <div class="hidden md:block cursor-pointer ml-auto">
-                              <svg class="w-10 fill-white/40" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.67"><path fill-rule="nonzero" d="M0 0h512v23.91H0V0zm0 327.76h512v23.91H0v-23.91zm0-163.88h512v23.91H0v-23.91z"/></svg>
+                              <svg id="arrow" shape-rendering="geometricPrecision" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.395505 328.852402">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #eb5939;
+                                    }
+                                  </style>
+                                </defs>
+                                <rect class="cls-1" x="276.547095" y="69.421739" width="50.84841" height="259.430663"/>
+                                <rect class="cls-1" x="172.255968" y="173.712865" width="50.84841" height="259.430663" transform="translate(-105.748024 501.10837) rotate(-90)"/>
+                                <rect class="cls-1" x="123.444934" y="-36.239411" width="50.84841" height="370.2171" transform="translate(-61.663616 148.869139) rotate(-45)"/>
+                              </svg>
                             </div>
                           </div>
                         </div>
@@ -208,7 +273,18 @@
                               <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
                             </div>
                             <div class="hidden md:block cursor-pointer ml-auto">
-                              <svg class="w-10 fill-white/40" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.67"><path fill-rule="nonzero" d="M0 0h512v23.91H0V0zm0 327.76h512v23.91H0v-23.91zm0-163.88h512v23.91H0v-23.91z"/></svg>
+                              <svg id="arrow" shape-rendering="geometricPrecision" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.395505 328.852402">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #eb5939;
+                                    }
+                                  </style>
+                                </defs>
+                                <rect class="cls-1" x="276.547095" y="69.421739" width="50.84841" height="259.430663"/>
+                                <rect class="cls-1" x="172.255968" y="173.712865" width="50.84841" height="259.430663" transform="translate(-105.748024 501.10837) rotate(-90)"/>
+                                <rect class="cls-1" x="123.444934" y="-36.239411" width="50.84841" height="370.2171" transform="translate(-61.663616 148.869139) rotate(-45)"/>
+                              </svg>
                             </div>
                           </div>
                         </div>
@@ -222,7 +298,18 @@
                               <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
                             </div>
                             <div class="hidden md:block cursor-pointer ml-auto">
-                              <svg class="w-10 fill-white/40" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.67"><path fill-rule="nonzero" d="M0 0h512v23.91H0V0zm0 327.76h512v23.91H0v-23.91zm0-163.88h512v23.91H0v-23.91z"/></svg>
+                              <svg id="arrow" shape-rendering="geometricPrecision" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.395505 328.852402">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #eb5939;
+                                    }
+                                  </style>
+                                </defs>
+                                <rect class="cls-1" x="276.547095" y="69.421739" width="50.84841" height="259.430663"/>
+                                <rect class="cls-1" x="172.255968" y="173.712865" width="50.84841" height="259.430663" transform="translate(-105.748024 501.10837) rotate(-90)"/>
+                                <rect class="cls-1" x="123.444934" y="-36.239411" width="50.84841" height="370.2171" transform="translate(-61.663616 148.869139) rotate(-45)"/>
+                              </svg>
                             </div>
                           </div>
                         </div>
@@ -254,7 +341,7 @@
                         <!-- flex flex-col justify-between -->
                         <div class=" col-span-9 font-content text-base md:text-2xl mt-3 md:mt-0 tracking-normal text-justify">
                           
-                            <p class="leading-[3.5rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dol
+                            <p class=" md:leading-[3.5rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dol
                             <span><img class="inline h-10 mx-1 rounded-full" src="/assets/images/jisoo mock.jpg"</span>
                             delectus quia libero <span><img class="inline h-10 mx-1 rounded-full" src="/assets/images/jisoo mock.jpg"</span>
                              aliquid temporibus molestias! Qui ratione
@@ -276,20 +363,90 @@
                 </div>
 
                 <!-- Contact -->
-                <div id="work" class="my-16 cursor-default tracking-tight w-full h-auto text-white flex flex-col items-center justify-center">
-                  <div class="px-6 md:px-16 grid md:grid-cols-2 grid-cols-1 grid-row-2 md:grid-row-1 w-full">
-                    <div class="p-4">
-                      <img src="/assets/images/dummy.png"/>
+                <div id="work" class="mb-4 my-16 md:my-32 cursor-default tracking-tight w-full h-auto text-white flex flex-col items-center justify-center">
+                  <div class="px-6 md:px-16 grid md:grid-cols-3 grid-cols-2 grid-row-2 md:grid-row-1 w-full">
+                    
+                    <div class="p-4 flex flex-col gap-y-4">
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        <span class="inline md:mr-2">
+                          <svg class="inline h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 384.166667">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #eb5939;
+                                }
+                              </style>
+                            </defs>
+                            <polygon class="cls-1" points="0 0 370 0 370 384.166667 0 0"/>
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
+
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        <span class="inline md:mr-2">
+                          <svg class="inline h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 384.166667">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #eb5939;
+                                }
+                              </style>
+                            </defs>
+                            <polygon class="cls-1" points="0 0 370 0 370 384.166667 0 0"/>
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
                     </div>
-                    <div class="p-4 bg-white">
-                        
+
+                    <div class="p-4 flex flex-col gap-y-4">
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        <span class="inline md:mr-2">
+                          <svg class="inline h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 384.166667">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #eb5939;
+                                }
+                              </style>
+                            </defs>
+                            <polygon class="cls-1" points="0 0 370 0 370 384.166667 0 0"/>
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
+
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        <span class="inline md:mr-2">
+                          <svg class="inline h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 384.166667">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #eb5939;
+                                }
+                              </style>
+                            </defs>
+                            <polygon class="cls-1" points="0 0 370 0 370 384.166667 0 0"/>
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
                     </div>
+
+                    <div class="p-4 flex flex-col gap-y-4 col-span-2 md:col-span-1">
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold">
+                        Stay in touch,
+                      </a>
+
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        imveeru14@gmail.com
+                      </a>
+                    </div>
+
                   </div>
                 </div>
 
-
-
-                
             </div>
 
         </div>
