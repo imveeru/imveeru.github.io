@@ -436,7 +436,7 @@
     <script>
       TweenMax.staggerFrom(
         ".titles > div",
-        0.8,
+        0.6,
         {
           x: "-60",
           ease: Power3.easeInOut,
@@ -447,7 +447,7 @@
 
       TweenMax.staggerTo(
         ".titles > div",
-        0.8,
+        0.6,
         {
           x: "60",
           ease: Power3.easeInOut,
@@ -487,11 +487,11 @@
         translateY: [80, 0],
         translateZ: 0,
         easing: "easeOutExpo",
-        duration: 2000,
-        delay: (el, i) => 8400 + 40 * i,
+        duration: 1000,
+        delay: (el, i) => 7000 + 40 * i,
       });
 
-      $('#container').delay(9400).hide(0); 
+      $('#container').delay(8000).hide(0); 
 
 
     </script>
