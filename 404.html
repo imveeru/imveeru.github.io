@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind import -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .menu-btn-active {
+            @apply text-center cursor-pointer border border-highlight text-black bg-highlight rounded-full p-4;
+          }
+
+          .menu-btn-inactive{
+            @apply text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4;
+          }
+        }
+    </style>
+
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <title>Veeramanohar - Oops!</title>
+
+</head>
+<body class="gradient-bg font-title">
+    
+
+    <!-- overall container -->
+    <div id="main-container" class="main-container grid grid-cols-12">
+        <!-- logo and copyright -->
+        <div class="fixed-column overflow-y-hidden text-white border-r border-white/20 hidden md:flex hidden flex-col items-center justify-between px-4 py-8 h-full">
+            <div><img class="w-16 opacity-70 hover:opacity-100 hover:fill-highlight" src="/assets/images/logo.svg"/></div>
+            <div class="flex flex-col items-center gap-y-4 justify-center">
+              <div class="bg-white/70 p-0.5 rounded-full"></div>
+              <div class="bg-white/20 p-0.5 rounded-full"></div>
+              <div class="bg-white/20 p-0.5 rounded-full"></div>
+              <div class="bg-white/20 p-0.5 rounded-full"></div>
+              <div class="bg-white/20 p-0.5 rounded-full"></div>
+            </div>
+            <div class="rotate-[-90deg] mb-12"><p class="text-[0.6em] text-white/50 font-special">VeeRAMAnoHAR's<br/>porfolio ©</p></div>
+        </div>
+
+        <div class="col-span-12 md:col-span-11 flex flex-col">
+            <!-- desktop nav -->
+            <div class="hidden  font-nav fixed-row md:flex text-white/50  border-b border-white/20 basis-1/12 py-8 px-12
+                        bg-gray-800 bg-opacity-10 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 flex-row justify-around">
+                <a class="hover:text-white hover:cursor-pointer" href="./index.html">HOME</a>
+                <a class="hover:text-white hover:cursor-pointer" href="#skills">SKILLS</a>
+                <a class="hover:text-white hover:cursor-pointer" href="#work">WORK</a>
+                <a class="hover:text-white hover:cursor-pointer" href="#about">ABOUT</a>
+                <a class="hover:text-white hover:cursor-pointer" href="#contact">CONTACT</a>
+            </div>
+
+            <!-- Mobile nav -->
+            <div class="md:hidden fixed-row border-b border-white/20 text-white basis-1/12 p-4 flex flex-row justify-between">
+                <div><img class="w-12 opacity-70 hover:opacity-100 hover:fill-highlight" src="/assets/images/logo.svg"/></div>
+                <svg class="w-5 fill-white/70" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.67"><path fill-rule="nonzero" d="M0 0h512v23.91H0V0zm0 327.76h512v23.91H0v-23.91zm0-163.88h512v23.91H0v-23.91z"/></svg>
+            </div>
+
+            <!-- Main content -->
+            <div class="scrollable-section">
+
+                <!-- Selected work -->
+                <div id="work" class="cursor-default tracking-tight w-full mb-8 my-16 md:my-32 text-white flex flex-col items-center justify-center">
+                  <div class="flex-1 font-bold text-7xl w-full">
+                      <p class="px-6 md:px-16 mb-3 md:text-8xl text-4xl text-center md:mb-20 font-title">404!</p>
+                      
+                      <a id="btn-research" class="menu-btn-inactive" href="./index.html">HOME</a>
+
+                  </div>
+                </div>
+
+
+                <!-- Contact -->
+                <div id="contact" class="mb-4 my-16 md:my-32 cursor-default tracking-tight w-full text-white flex flex-col items-center justify-center">
+                  <div class="px-6 md:px-16 grid md:grid-cols-3 grid-cols-2 grid-row-2 md:grid-row-1 w-full">
+                    
+                    <div class="p-4 flex flex-col gap-y-4">
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        <span class="inline md:mr-2">
+                          <svg class="inline h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 384.166667">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #eb5939;
+                                }
+                              </style>
+                            </defs>
+                            <polygon class="cls-1" points="0 0 370 0 370 384.166667 0 0"/>
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
+
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        <span class="inline md:mr-2">
+                          <svg class="inline h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 384.166667">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #eb5939;
+                                }
+                              </style>
+                            </defs>
+                            <polygon class="cls-1" points="0 0 370 0 370 384.166667 0 0"/>
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
+                    </div>
+
+                    <div class="p-4 flex flex-col gap-y-4">
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        <span class="inline md:mr-2">
+                          <svg class="inline h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 384.166667">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #eb5939;
+                                }
+                              </style>
+                            </defs>
+                            <polygon class="cls-1" points="0 0 370 0 370 384.166667 0 0"/>
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
+
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        <span class="inline md:mr-2">
+                          <svg class="inline h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 384.166667">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  fill: #eb5939;
+                                }
+                              </style>
+                            </defs>
+                            <polygon class="cls-1" points="0 0 370 0 370 384.166667 0 0"/>
+                          </svg>
+                        </span>
+                        LinkedIn
+                      </a>
+                    </div>
+
+                    <div class="p-4 flex flex-col gap-y-4 col-span-2 md:col-span-1">
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold">
+                        Stay in touch,
+                      </a>
+
+                      <a href="" class="md:text-4xl text-2xl font-title font-bold hover:text-highlight cursor-pointer">
+                        imveeru14@gmail.com
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
+
+    <!-- Pre loader -->
+
+
+    <!-- preloader -->
+    <script>
+      
+
+      // sourcery skip: avoid-using-var
+      var textWrapper = document.querySelector(".main-container");
+
+      anime.timeline().add({
+        targets: ".main-container",
+        opacity: [0, 1],
+        translateY: [80, 0],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: 30,
+      });
+
+      //tab switching
+      $("#menu ul li").click(function(e){
+        var tabname = $(this).attr("id").slice(4);
+        console.log(tabname);
+        
+        //handling active tab
+        $(this).removeClass("menu-btn-inactive");
+        $("#menu ul li").removeClass("menu-btn-active");
+        $("#menu ul li").addClass("menu-btn-inactive");
+        $(this).addClass("menu-btn-active");
+
+        //handling content container
+        $("#web-container").addClass("hidden");
+        $("#aiml-container").addClass("hidden");
+        $("#research-container").addClass("hidden");
+        $("#ui-container").addClass("hidden");
+
+        $("#"+tabname+"-container").removeClass("hidden");
+        
+
+
+      })
+
+
+    </script>
+
+
+</body>
+
+
+</html>
