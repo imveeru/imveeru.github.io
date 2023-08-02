@@ -20,7 +20,7 @@
     
 
     <!-- overall container -->
-    <div id="main-container" class="main-container hidden grid-cols-12">
+    <div id="main-container" class="main-container grid grid-cols-12">
         <!-- logo and copyright -->
         <div class="fixed-column overflow-y-hidden text-white border-r border-white/20 hidden md:flex hidden flex-col items-center justify-between px-4 py-8 h-full">
             <div><img class="w-16 opacity-70 hover:opacity-100 hover:fill-highlight" src="/assets/images/logo.svg"/></div>
@@ -38,7 +38,7 @@
             <!-- desktop nav -->
             <div class="hidden  font-nav fixed-row md:flex text-white/50  border-b border-white/20 basis-1/12 py-8 px-12
                         bg-gray-800 bg-opacity-10 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 flex-row justify-around">
-                <a class="hover:text-white hover:cursor-pointer" href="#hero">HOME</a>
+                <a class="hover:text-white hover:cursor-pointer" href="./index.html">HOME</a>
                 <a class="hover:text-white hover:cursor-pointer" href="#skills">SKILLS</a>
                 <a class="hover:text-white hover:cursor-pointer" href="#work">WORK</a>
                 <a class="hover:text-white hover:cursor-pointer" href="#about">ABOUT</a>
@@ -53,172 +53,21 @@
 
             <!-- Main content -->
             <div class="scrollable-section">
-        
-                <!-- Hero section -->
-                <div id="hero" class="cursor-default h-[48dvh] md:h-[90dvh] text-white flex flex-col px-6 md:px-16 items-center justify-center">                    
-                    <div class="font-title font-bold flex flex-col gap-y-4">                      
-                      <span class="tracking-widest font-special text-sm md:text-lg text-white text-left">
-                        <img class="inline h-5 mr-2 ml-2" src="/assets/images/waving-hand.webp"/>Hi, i'M VeeRAMAnoHAR
-                      </span> 
-                      <section class="tracking-tight text-5xl lg:text-9xl">
-                        <p class="">A <span class="text-highlight">Creative</span></p>
-                        <p class="">Developer &</p>
-                        <p class=""><span class="text-highlight">Tech</span> Enthusiast.</p>
-                      </section>
-                    </div>
-                </div>
-
-                <!-- Marquee -->
-                <div class="group text-white/80 cursor-default relative w-full flex flex-row border-t-2 border-b-2 bg-black/30 md:bg-black/0 border-highlight overflow-x-hidden mb-24 md:mb-44 tracking-tight">
-                  
-                  <div class="py-3 md:py-6 animate-marquee group-hover:pause whitespace-nowrap text-white">
-                      <span class="mx-4 text-4xl">Desire</span>
-                      <span class="text-highlight mx-4 text-4xl">✱</span>
-                      <span class="mx-4 text-4xl">Design</span>
-                      <span class="text-highlight mx-4 text-4xl">✱</span>
-                      <span class="mx-4 text-4xl">Develop</span>
-                      <span class="text-highlight mx-4 text-4xl">✱</span>
-                  </div>
-
-                  <div class="py-3 md:py-6 animate-marquee group-hover:pause whitespace-nowrap text-white">
-                    <span class="mx-4 text-4xl">Desire</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                    <span class="mx-4 text-4xl">Design</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                    <span class="mx-4 text-4xl">Develop</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                  </div>
-
-                  <div class="py-3 md:py-6 animate-marquee group-hover:pause whitespace-nowrap text-white">
-                    <span class="mx-4 text-4xl">Desire</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                    <span class="mx-4 text-4xl">Design</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                    <span class="mx-4 text-4xl">Develop</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                  </div>
-
-                  <div class="py-3 md:py-6 animate-marquee whitespace-nowrap text-white">
-                    <span class="mx-4 text-4xl">Desire</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                    <span class="mx-4 text-4xl">Design</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                    <span class="mx-4 text-4xl">Develop</span>
-                    <span class="text-highlight mx-4 text-4xl">✱</span>
-                  </div>
-
-                </div>
-              
-                <!-- Skills section -->
-                <div id="skills" class="cursor-default tracking-tight w-full h-[50vh] mb-16 md:mb-2 md:h-full text-white flex flex-col items-center justify-center">
-                  <div class="flex-1 font-sans font-bold text-7xl w-full">
-                    <p class="px-6 md:px-16 mb-3 md:text-4xl text-2xl font-title">What do I do? <span class="font-content text-xs text-white/40 hidden md:inline ">(Hover on each topic to see more details)</span></p>
-                    <!-- Skill div -->
-                    <div class="group max-w-full text-center text-black hover:bg-highlight border-t border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6
-                                transition-all duration-200 ease-out
-                                md:grid grid-cols-12
-                                text-highlight hover:text-black transition duration-200
-                                items-center justify-center">
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">WEB DEVELOPMENT</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <p class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
-                      </p>
-                    </div>
-
-                    <div class="group max-w-full text-center text-black hover:bg-highlight border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6
-                                transition-all duration-200 ease-out
-                                md:grid grid-cols-12
-                                text-highlight hover:text-black transition duration-200
-                                items-center justify-center">
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">ARTIFICIAL INTELLIGENCE</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <p class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
-                      </p>
-                    </div>
-
-                    <div class="group max-w-full text-center text-black hover:bg-highlight border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 
-                                transition-all duration-200 ease-out
-                                md:grid grid-cols-12
-                                text-highlight hover:text-black transition duration-200
-                                items-center justify-center">
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">RESEARCH</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <p class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
-                      </p>
-                    </div>
-
-                    <div class="group max-w-full text-center text-black hover:bg-highlight border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 
-                                transition-all duration-200 ease-out
-                                md:grid grid-cols-12
-                                text-highlight hover:text-black transition duration-200
-                                items-center justify-center">
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">GRAPHIC DESIGN</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <a class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Know more >
-                      </a>
-                    </div>
-
-                    <div class="group max-w-full text-center text-black hover:bg-highlight border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6 
-                                transition-all duration-200 ease-out
-                                md:grid grid-cols-12
-                                text-highlight hover:text-black transition duration-200
-                                items-center justify-center">
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">UI/UX & BRANDING</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <a class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
-                      </a>
-                    </div>
-                    
-                  </div>
-                </div>
 
                 <!-- Selected work -->
-                <div id="work" class="cursor-default tracking-tight w-full mb-8 md:h-full text-white flex flex-col items-center justify-center">
+                <div id="work" class="cursor-default tracking-tight w-full mb-8 my-16 md:my-32 text-white flex flex-col items-center justify-center">
                   <div class="flex-1 font-bold text-7xl w-full">
-                      <p class="px-6 md:px-16 mb-3 md:text-4xl text-2xl font-title">Selected Work
-                        <a class="ml-2 cursor-pointer text-base text-highlight hover:underline inline ">
-                          View All Works >
-                        </a>
-                      </p>
+                      <p class="px-6 md:px-16 mb-3 md:text-8xl text-4xl text-center md:mb-20 font-title">WORKS</p>
                       
                       <!-- Categories - only for PC -->
-                      <!-- <div class="px-6 md:px-16 md:text-xl text-base mt-6 mb-4 gap-x-4 font-title w-full hidden lg:grid grid-cols-2 md:grid-cols-4 items-center justify-between ">
-                          <p class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Web Development</p>
-                          <p class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Design</p>
-                          <p class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Artificial Intelligence</p>
-                          <p class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Research</p>
-                      </div> -->
+                      <div class="px-6 md:px-16 md:text-xl text-base mt-6 mb-4 gap-x-4 font-title w-full grid grid-cols-1  gap-4 md:grid-cols-4 items-center justify-between ">
+                          <p data-tabName="web" class="text-center cursor-pointer border border-highlight text-black bg-highlight rounded-full p-4">Web Development</p>
+                          <p data-tabName="aiml" class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Design</p>
+                          <p data-tabName="research" class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Artificial Intelligence</p>
+                          <p data-tabName="ui" class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Research</p>
+                      </div>
                     
-                      <div class="px-6 md:px-16 flex flex-col md:flex-row gap-x-4 overflow-y-hidden justify-center items-center">
-                        <!-- <div class="group relative w-[90%] md:w-[25%] rounded">
-                          <img src="/assets/images/project_cover.jpg" class="object-cover grayscale group-hover:grayscale-0">
-                          <div class="absolute left-0 bottom-0 p-4 pt-16 cursor-pointer
-                                      bg-gradient-to-t from-black from-30% to-transparent w-full
-                                      ">
-                            <p class="font-title text-6xl">Title</p>
-                            <p class="font-content text-base">AI based AutoML app</p>
-                          </div>
-                        </div> -->
+                      <div id="web" class="px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
 
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
@@ -247,6 +96,20 @@
                             </div>
                           </div>
                         </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                            <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                            <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                        border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                              <div class="cursor-pointer">
+                                <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                                <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                              </div>
+                              <div class="hidden md:block cursor-pointer ml-auto">
+                                <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                              </div>
+                            </div>
+                          </div>
 
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
@@ -277,52 +140,235 @@
                         </div>
                         
                       </div>
-                  </div>
-                </div>
 
-                <!-- About Me -->
-                <div id="about" class="cursor-default tracking-tight my-16 w-full h-auto text-white flex flex-col items-center justify-center">
-                  <div class="flex-1 font-sans font-bold text-7xl w-full">
-                      <p class="px-6 md:px-16 mb-3 md:text-4xl text-2xl font-title">About me
-                        <a class="ml-2 cursor-pointer text-base text-highlight hover:underline inline ">
-                          Know more >
-                        </a>
-                      </p>
+                      <div id="aiml" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
 
-                      <div class="px-6 md:px-16 md:grid grid-cols-12 gap-16 mt-3 md:mt-8">
-
-                        <img src="/assets/images/me_1000.jpg" class="col-span-3">
-
-                        <!-- <p class="text-justify font-content text-base md:text-xl col-span-9">
-                          An ambitious undergraduate student with a year of software engineering internship experience and three years of freelance work, bringing a blend of technical expertise and leadership skills. Demonstrated strong organizational and interpersonal abilities through team management, coordination of university events, and leadership roles in clubs. Currently involved in cutting-edge research projects focusing on Computational Creativity, Evolutionary Computation, Genetic Algorithms, Generative AI, Artificial Intelligence, Data Analysis, and Machine Learning. Actively seeking an entry-level position to contribute to a dynamic team and further develop skills. Let's connect to explore exciting opportunities in the world of technology.
-                        </p> -->
-
-                        <!-- flex flex-col justify-between -->
-                        <div class=" col-span-9 font-content text-base md:text-2xl mt-3 md:mt-0 tracking-normal text-justify">
-                          
-                            <p class=" md:leading-[3.5rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dol
-                            <span><img class="inline h-10 mx-1 rounded-full" src="/assets/images/jisoo mock.jpg"</span>
-                            delectus quia libero <span><img class="inline h-10 mx-1 rounded-full" src="/assets/images/jisoo mock.jpg"</span>
-                             aliquid temporibus molestias! Qui ratione
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dol
-                            <span><img class="inline h-10 mx-1 rounded-full" src="/assets/images/jisoo mock.jpg"</span>
-                            delectus quia libero aliquid temporibus
-                            <span><img class="inline h-10 mx-1 rounded-full" src="/assets/images/jisoo mock.jpg"</span>
-                            mo Qui ratione 
-                            <span><img class="inline h-10 mx-1 rounded-full" src="/assets/images/jisoo mock.jpg"</span>
-                            delectus quia libero aliquid temporibus molestias! Qui ratione</p>
-
-                            <!-- <a class="hover:text-highlight py-4 cursor-pointer">Wanna know more about me?</a> -->
-
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">ML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
                         </div>
 
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                            <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                            <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                        border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                              <div class="cursor-pointer">
+                                <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                                <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                              </div>
+                              <div class="hidden md:block cursor-pointer ml-auto">
+                                <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                              </div>
+                            </div>
+                          </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+                        
                       </div>
-                      
+
+                      <div id="research" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">Research</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                            <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                            <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                        border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                              <div class="cursor-pointer">
+                                <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                                <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                              </div>
+                              <div class="hidden md:block cursor-pointer ml-auto">
+                                <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                              </div>
+                            </div>
+                          </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                      <div id="ui" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">UI</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                            <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                            <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                        border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                              <div class="cursor-pointer">
+                                <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                                <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                              </div>
+                              <div class="hidden md:block cursor-pointer ml-auto">
+                                <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                              </div>
+                            </div>
+                          </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="group min-w-[300px] md:max-w-[25%] mt-8">
+                          <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+                          <div class="flex flex-col gap-y-6 justify-between border group-hover:bg-highlight group-hover:text-black
+                                      border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
+                            <div class="cursor-pointer">
+                              <p class="font-title md:text-4xl text-2xl">IntelliML</p>
+                              <p class="font-content group-hover:text-black text-white/40 text-base">AI based AutoML app</p>
+                            </div>
+                            <div class="hidden md:block cursor-pointer ml-auto">
+                              <svg class="w-12 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+
                   </div>
                 </div>
 
+
                 <!-- Contact -->
-                <div id="contact" class="mb-4 my-16 md:my-32 cursor-default tracking-tight w-full h-auto text-white flex flex-col items-center justify-center">
+                <div id="contact" class="mb-4 my-16 md:my-32 cursor-default tracking-tight w-full text-white flex flex-col items-center justify-center">
                   <div class="px-6 md:px-16 grid md:grid-cols-3 grid-cols-2 grid-row-2 md:grid-row-1 w-full">
                     
                     <div class="p-4 flex flex-col gap-y-4">
@@ -415,41 +461,11 @@
     <div class="cursor"></div>
 
     <!-- Pre loader -->
-    <div id="container">
-      <ul class="blocks">
-        <li class="block-1 block"></li>
-        <li class="block-2 block"></li>
-        <li class="block-3 block"></li>
-        <li class="block-4 block"></li>
-        <li class="block-5 block"></li>
-        <li class="block-6 block"></li>
-      </ul>
-    </div>
 
 
     <!-- preloader -->
     <script>
-      TweenMax.staggerFrom(
-        ".blocks > li",
-        3,
-        {
-          x: "-1600",
-          delay: 4.2,
-          ease: Expo.easeInOut,
-        },
-        0.16
-      );
-
-      TweenMax.staggerTo(
-        ".blocks > li",
-        2.6,
-        {
-          x: "1600",
-          delay: 6.8,
-          ease: Expo.easeInOut,
-        },
-        0.2
-      );
+      
 
       // sourcery skip: avoid-using-var
       var textWrapper = document.querySelector(".main-container");
@@ -460,13 +476,10 @@
         translateY: [80, 0],
         translateZ: 0,
         easing: "easeOutExpo",
-        duration: 700,
-        delay: (el, i) => 7000 + 40 * i,
+        duration: 1400,
+        delay: 30,
       });
 
-      $('#container').delay(8000).hide(0); 
-      $('#main-container').removeClass("hidden");
-      $('#main-container').addClass("grid");
 
     </script>
 
