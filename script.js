@@ -29,8 +29,8 @@ tailwind.config = {
 
 //custom cursor
 document.addEventListener('mousemove', (e)=>{
-  (document.querySelector('#cursor')).style.left=e.pageX+'px';
-  (document.querySelector('#cursor')).style.top=e.pageY+'px';
+  (document.querySelector('.cursor')).style.left=e.pageX+'px';
+  (document.querySelector('.cursor')).style.top=e.pageY+'px';
 })
 
 //preloader
