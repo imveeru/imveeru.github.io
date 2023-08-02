@@ -6,10 +6,22 @@
 
     <!-- tailwind import -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .menu-btn-active {
+            @apply text-center cursor-pointer border border-highlight text-black bg-highlight rounded-full p-4;
+          }
+
+          .menu-btn-inactive{
+            @apply text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4;
+          }
+        }
+    </style>
+
     <script src="script.js"></script> 
     <link rel="stylesheet" href="style.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
@@ -60,14 +72,16 @@
                       <p class="px-6 md:px-16 mb-3 md:text-8xl text-4xl text-center md:mb-20 font-title">WORKS</p>
                       
                       <!-- Categories - only for PC -->
-                      <div class="px-6 md:px-16 md:text-xl text-base mt-6 mb-4 gap-x-4 font-title w-full grid grid-cols-1  gap-4 md:grid-cols-4 items-center justify-between ">
-                          <p data-tabName="web" class="text-center cursor-pointer border border-highlight text-black bg-highlight rounded-full p-4">Web Development</p>
-                          <p data-tabName="aiml" class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Design</p>
-                          <p data-tabName="research" class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Artificial Intelligence</p>
-                          <p data-tabName="ui" class="text-center cursor-pointer border border-white/40 hover:border-highlight hover:text-black hover:bg-highlight rounded-full p-4">Research</p>
+                      <div id="menu">
+                      <ul class="px-6 md:px-16 md:text-xl text-base mt-6 mb-4 gap-x-4 font-title w-full grid grid-cols-1  gap-4 md:grid-cols-4 items-center justify-between ">
+                          <li id="btn-web" class="menu-btn-active">Web Development</li>
+                          <li id="btn-aiml" class="menu-btn-inactive">AI & Machine Learning</li>
+                          <li id="btn-ui" class="menu-btn-inactive">UI/UX & Designing</li>
+                          <li id="btn-research" class="menu-btn-inactive">Research</li>
+                      </ul>
                       </div>
                     
-                      <div id="web" class="px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
+                      <div id="web-container" class="px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
 
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
@@ -141,7 +155,7 @@
                         
                       </div>
 
-                      <div id="aiml" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
+                      <div id="aiml-container" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
 
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
@@ -215,7 +229,7 @@
                         
                       </div>
 
-                      <div id="research" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
+                      <div id="research-container" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
 
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
@@ -289,7 +303,7 @@
                         
                       </div>
 
-                      <div id="ui" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
+                      <div id="ui-container" class="hidden px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center">
 
                         <div class="group min-w-[300px] md:max-w-[25%] mt-8">
                           <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
@@ -479,6 +493,29 @@
         duration: 1400,
         delay: 30,
       });
+
+      //tab switching
+      $("#menu ul li").click(function(e){
+        var tabname = $(this).attr("id").slice(4);
+        console.log(tabname);
+        
+        //handling active tab
+        $(this).removeClass("menu-btn-inactive");
+        $("#menu ul li").removeClass("menu-btn-active");
+        $("#menu ul li").addClass("menu-btn-inactive");
+        $(this).addClass("menu-btn-active");
+
+        //handling content container
+        $("#web-container").addClass("hidden");
+        $("#aiml-container").addClass("hidden");
+        $("#research-container").addClass("hidden");
+        $("#ui-container").addClass("hidden");
+
+        $("#"+tabname+"-container").removeClass("hidden");
+        
+
+
+      })
 
 
     </script>
