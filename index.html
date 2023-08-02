@@ -444,50 +444,49 @@
 
     <!-- preloader -->
     <script>
-
       TweenMax.staggerFrom(
-        ".titles > div",
-        0.6,
-        {
-          x: "-60",
-          ease: Power3.easeInOut,
-          opacity: "0",
-        },
-        2
-      );
+				".titles > div",
+				0.8,
+				{
+					x: "-60",
+					ease: Power3.easeInOut,
+					opacity: "0",
+				},
+				2
+			);
 
-      TweenMax.staggerTo(
-        ".titles > div",
-        0.6,
-        {
-          x: "60",
-          ease: Power3.easeInOut,
-          delay: 1.2,
-          opacity: "0",
-        },
-        2
-      );
-      TweenMax.staggerFrom(
-        ".blocks > li",
-        1,
-        {
-          x: "-1600",
-          delay: 2.2, //2.2
-          ease: Expo.easeInOut,
-        },
-        0.16
-      );
+			TweenMax.staggerTo(
+				".titles > div",
+				0.8,
+				{
+					x: "60",
+					ease: Power3.easeInOut,
+					delay: 1.2,
+					opacity: "0",
+				},
+				2
+			);
+			TweenMax.staggerFrom(
+				"li",
+				3,
+				{
+					x: "-1600",
+					delay: 4.2,
+					ease: Expo.easeInOut,
+				},
+				0.16
+			);
 
-      TweenMax.staggerTo(
-        ".blocks > li",
-        0.6,
-        {
-          x: "1600",
-          delay: 2.8, //2.8
-          ease: Expo.easeInOut,
-        },
-        0.2
-      );
+			TweenMax.staggerTo(
+				"li",
+				2.6,
+				{
+					x: "1600",
+					delay: 6.8,
+					ease: Expo.easeInOut,
+				},
+				0.2
+			);
 
       // sourcery skip: avoid-using-var
       var textWrapper = document.querySelector(".main-container");
@@ -498,11 +497,11 @@
         translateY: [80, 0],
         translateZ: 0,
         easing: "easeOutExpo",
-        duration: 1000,
-        delay: (el, i) => 7000 + 40 * i,
+        duration: 1400,
+        delay: (el, i) => 8400 + 40 * i,
       });
 
-      $('#container').delay(8500).hide(0); 
+      $('#container').delay(8800).hide(0); 
       $('#main-container').removeClass("hidden");
       $('#main-container').addClass("grid");
 

@@ -117,7 +117,12 @@ ul.titles {
 	display: flex;
 }
 
-
+.blocks{
+	position: fixed;
+	top:0;
+	left:0;
+	overflow-y: hidden;
+}
 
 ul.blocks {
 	margin: 0;
@@ -137,35 +142,35 @@ li.block {
 .block-1 {
 	width: 0.2%;
 	margin: 0 10px;
-	background: #da0510;
+	background: #EB5939;
 }
 
 .block-2 {
 	width: 1.4%;
 	margin: 0 200px 0 20px;
-	background: #2001fe;
+	background: #EB5939;
 }
 
 .block-3 {
 	width: 0.8%;
 	margin: 0 40px;
-	background: #01fefe;
+	background: #EB5939;
 }
 
 .block-4 {
 	width: 2%;
 	margin: 0 400px;
-	background: #00fe00;
+	background: #EB5939;
 }
 
 .block-5 {
 	width: 0.8%;
 	margin: 0 20px;
-	background: #f4f315;
+	background: #EB5939;
 }
 
 .block-6 {
 	width: 2.8%;
-	background: #fa04f9;
+	background: #EB5939;
 }
 
