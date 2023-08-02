@@ -117,6 +117,8 @@ ul.titles {
 	display: flex;
 }
 
+
+
 ul.blocks {
 	margin: 0;
 	padding: 0;
@@ -166,3 +168,4 @@ li.block {
 	width: 2.8%;
 	background: #fa04f9;
 }
+

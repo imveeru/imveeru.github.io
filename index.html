@@ -280,8 +280,8 @@
                   </div>
                 </div>
 
-                <!-- About Me -->
-                <div id="about" class="cursor-default tracking-tight my-16 w-full h-auto text-white flex flex-col items-center justify-center">
+                <!-- volunteering -->
+                <div id="vol" class="cursor-default tracking-tight my-16 w-full h-auto text-white flex flex-col items-center justify-center">
                   <div class="flex-1 font-sans font-bold text-7xl w-full">
                       <p class="px-6 md:px-16 mb-3 md:text-4xl text-2xl font-title">About me
                         <a class="ml-2 cursor-pointer text-base text-highlight hover:underline inline ">
@@ -434,6 +434,7 @@
 
     <!-- preloader -->
     <script>
+
       TweenMax.staggerFrom(
         ".titles > div",
         0.6,
@@ -458,10 +459,10 @@
       );
       TweenMax.staggerFrom(
         ".blocks > li",
-        3,
+        1,
         {
           x: "-1600",
-          delay: 4.2,
+          delay: 2.2, //2.2
           ease: Expo.easeInOut,
         },
         0.16
@@ -469,10 +470,10 @@
 
       TweenMax.staggerTo(
         ".blocks > li",
-        2.6,
+        0.6,
         {
           x: "1600",
-          delay: 6.8,
+          delay: 2.8, //2.8
           ease: Expo.easeInOut,
         },
         0.2
@@ -487,11 +488,11 @@
         translateY: [80, 0],
         translateZ: 0,
         easing: "easeOutExpo",
-        duration: 700,
-        delay: (el, i) => 7000 + 40 * i,
+        duration: 1000,
+        delay: (el, i) => 8000 + 40 * i,
       });
 
-      $('#container').delay(8000).hide(0); 
+      $('#container').delay(8500).hide(0); 
       $('#main-container').removeClass("hidden");
       $('#main-container').addClass("grid");
 
