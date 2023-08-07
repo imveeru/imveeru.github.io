@@ -212,7 +212,7 @@
 
 
                 <!-- popup -->
-                <div class="w-full md:h-full bg-black/80 backdrop-filter backdrop-blur-xl
+                <!-- <div class="w-full md:h-full bg-black/80 backdrop-filter backdrop-blur-xl
                             top-0 left-0 absolute
                             flex flex-col rounded-lg
                             p-8 text-white">
@@ -271,6 +271,8 @@
                       <p class="text-lg font-title hover:underline hover:text-highlight">Click for more.</p>
                     </div>
                             
+                </div> -->
+                <div id="popup_container">
                 </div>
 
                 <!-- Selected work -->
@@ -518,6 +520,69 @@
           </div>
           <span class="z-[-9999] absolute top-0 left-0 flex h-0 w-full mb-0 transition-all duration-300 ease-out transform translate-y-0 bg-highlight group-hover:h-full"></span>
         </div>
+      </div>
+    </template>
+
+    <template id="project_popup">
+      <div class="hidden w-full md:h-full bg-black/80 backdrop-filter backdrop-blur-xl
+                            top-0 left-0 absolute
+                            flex flex-col rounded-lg
+                            p-8 text-white">
+
+          <div id="popup-close" class="w-full my-2 ">
+            <svg class="fill-white h-10" viewBox="0 0 524 524" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              
+              <g id="Layer_x0020_1">
+              
+              <path class="fil0" d="M262 0c72,0 138,29 185,77 48,47 77,113 77,185 0,72 -29,138 -77,185 -47,48 -113,77 -185,77 -72,0 -138,-29 -185,-77 -48,-47 -77,-113 -77,-185 0,-72 29,-138 77,-185 47,-48 113,-77 185,-77zm177 85c-45,-45 -108,-73 -177,-73 -69,0 -132,28 -177,73 -45,45 -73,108 -73,177 0,69 28,132 73,177 45,45 108,73 177,73 69,0 132,-28 177,-73 45,-45 73,-108 73,-177 0,-69 -28,-132 -73,-177z" id="Curve_x0020_767"/>
+              
+              <path class="fil0" d="M208 368c2,3 2,7 0,9 -3,2 -6,2 -9,0l-110 -111c-3,-2 -3,-6 0,-8l110 -111c3,-2 6,-2 9,0 2,2 2,6 0,9l-107 106 107 106z" id="Curve_x0020_456"/>
+              
+              <path class="fil0" d="M93 268c-3,0 -6,-3 -6,-6 0,-3 3,-6 6,-6l338 0c3,0 6,3 6,6 0,3 -3,6 -6,6l-338 0z" id="Curve_x0020_45"/>
+              
+              </g>
+              
+            </svg>
+
+          </div>  
+
+          <div class="w-full  gap-x-6 flex md:flex-row flex-col my-4">
+            
+            <div class="w-full ">
+              <img class="w-[60%] m-auto" src="./assets/images/me_1000.jpg"/>
+            </div>
+
+            <div class="w-full  tracking-tight">
+              <p id="popup_title" class="font-title text-3xl text-left md:text-5xl md:mb-6 mb-2 font-bold">IntelliML</p>
+              <p id="popup_content" class="font-content text-justify text-base md:text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                ptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa
+              </p>
+            </div>
+          </div>  
+
+          <div class="w-full  my-4">
+            <p class="font-title text-xl text-left md:text-3xl md:mb-6 mb-2 font-bold">Tools / Technology Used</p>
+            <div class="flex flex-row flex-wrap gap-4 md:gap-x-10 md:gap-y-12">
+              <p><span class="inline"><img class="h-8 rounded-xl mr-2 inline" src="./assets/images/me_1000.jpg"/></span>Python</p>
+              <p><span class="inline"><img class="h-8 rounded-xl mr-2 inline" src="./assets/images/me_1000.jpg"/></span>Python</p>
+              <p><span class="inline"><img class="h-8 rounded-xl mr-2 inline" src="./assets/images/me_1000.jpg"/></span>Python</p>
+              <p><span class="inline"><img class="h-8 rounded-xl mr-2 inline" src="./assets/images/me_1000.jpg"/></span>Python</p>
+              <p><span class="inline"><img class="h-8 rounded-xl mr-2 inline" src="./assets/images/me_1000.jpg"/></span>Python</p>
+              <p><span class="inline"><img class="h-8 rounded-xl mr-2 inline" src="./assets/images/me_1000.jpg"/></span>Python</p>
+            </div>
+          </div>
+
+          <div class="w-full cursor-pointer my-4 flex flex-row items-center align-center">
+            <svg class="rotate-[-90deg]  w-8 fill-white/40 group-hover:fill-black" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" id="memory-arrow-bottom-right"><path d="M17 8V17H8V15H13V14H12V13H11V12H10V11H9V10H8V9H7L7 8H6V7H7V6H8L8 7H9V8H10V9H11V10H12V11H13V12H14V13H15V8H17Z" /></svg>
+            <p class="text-lg font-title hover:underline hover:text-highlight">Click for more.</p>
+          </div>
+                  
       </div>
     </template>
 
