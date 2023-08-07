@@ -44,7 +44,9 @@ console.log(popup_temp)
 
 for(let i=0;i<projects.length;i++){
     let clone = popup_temp.content.cloneNode(true);
+    console.log(clone)
     clone.querySelector("#popup_title").textContent=projects[i].title;
     clone.querySelector("#popup_content").textContent=projects[i].content;
+    clone.setAttribute("popup_id","popup_"+i);
     document.getElementById("popup_container").appendChild(clone);
 }
