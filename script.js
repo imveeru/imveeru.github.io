@@ -35,7 +35,7 @@ document.addEventListener('mousemove', (e)=>{
 
 
 function open_popup(){
-  alert(this.dataset.popup_name);
+  //alert(this.dataset.popup_name);
   var title_div=this.childNodes[3];
   var title = title_div.childNodes[1].innerText.split('\n')[0];
   //console.log(title);
@@ -45,5 +45,8 @@ function open_popup(){
 }
 
 function close_popup(){
-  alert(this);
+  var parent=this.parentElement;
+  console.log(parent.classList);
+  parent.classList.add("hidden");
+
 }
