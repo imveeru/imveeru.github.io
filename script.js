@@ -48,5 +48,21 @@ function close_popup(){
   var parent=this.parentElement;
   console.log(parent.classList);
   parent.classList.add("hidden");
-
 }
+
+document.onkeydown = function(evt) {
+// sourcery skip: dont-reassign-parameters
+  evt = evt || window.event;
+  if (evt.keyCode == 27) {
+      var boxes=document.querySelectorAll("#popup_box");
+      for(let i=0;i<boxes.length;i++){
+        var classes=boxes[i].classList;
+        console.log(typeof classes)
+        if(!classes.contains("hidden")){
+          boxes[i].classList.add("hidden")
+        }
+        //console.log(classes)
+      }
+      //console.log(boxes)
+  }
+};
