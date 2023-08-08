@@ -33,38 +33,17 @@ document.addEventListener('mousemove', (e)=>{
   (document.querySelector('.cursor')).style.top=e.pageY+'px';
 })
 
-//preloader
 
-//text reveal animation
-// let paragraphs = [...document.querySelectorAll('p')];
-// let spans = [];
+function open_popup(){
+  alert(this.dataset.popup_name);
+  var title_div=this.childNodes[3];
+  var title = title_div.childNodes[1].innerText.split('\n')[0];
+  //console.log(title);
+  var popup=document.querySelectorAll(`[data-popup_name=popup-${title}]`);
+  popup[0].classList.remove("hidden");
+  console.log(popup[0].classList)
+}
 
-// paragraphs.forEach(paragraph => {
-//     let htmlString = '';
-//     let pArray = paragraph.textContent.split('');
-
-//     for (let i = 0; i < pArray.length; i++) {
-//         htmlString += `<span>${pArray[i]}</span>`;
-//     }
-
-//     paragraph.innerHTML = htmlString;
-// });
-
-// spans = [...document.querySelectorAll('span')];
-
-// function revealSpans() {
-//     for (let i = 0; i < spans.length; i++) {
-//         if (spans[i].parentElement.getBoundingClientRect().top < window.innerHeight / 2) {
-//             let { left, top } = spans[i].getBoundingClientRect();
-//             top = top - (window.innerHeight * 0.2);
-
-//             let opacityValue = 1 - ((top * 0.01) + (left * 0.001));
-//             opacityValue = opacityValue < 0.1 ? 0.1 : opacityValue > 1 ? 1 : opacityValue.toFixed(3);
-            
-//             spans[i].style.opacity = opacityValue;
-//         }
-//     }
-// }
-
-// window.addEventListener('scroll', revealSpans);
-// revealSpans();
+function close_popup(){
+  alert(this);
+}

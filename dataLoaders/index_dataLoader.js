@@ -35,6 +35,7 @@ for(let i=0;i<projects.length;i++){
     let clone = temp.content.cloneNode(true);
     clone.querySelector("#title").textContent=projects[i].title;
     clone.querySelector("#subtitle").textContent=projects[i].subtitle;
+    clone.querySelector("#project_box").dataset.popup_name="popup-"+projects[i].title;
     document.getElementById("work_container").appendChild(clone);
 }
 
@@ -44,9 +45,11 @@ console.log(popup_temp)
 
 for(let i=0;i<projects.length;i++){
     let clone = popup_temp.content.cloneNode(true);
-    console.log(clone)
+    console.log(clone);
     clone.querySelector("#popup_title").textContent=projects[i].title;
     clone.querySelector("#popup_content").textContent=projects[i].content;
-    clone.setAttribute("popup_id","popup_"+i);
+    clone.querySelector("#popup_box").dataset.popup_name="popup-"+projects[i].title;
+    console.log(clone.querySelector("#popup_box").dataset.popup_name);
     document.getElementById("popup_container").appendChild(clone);
 }
+
