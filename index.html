@@ -14,8 +14,6 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <title>Veeramanohar</title>
 
 </head>
@@ -49,9 +47,39 @@
             </div>
 
             <!-- Mobile nav -->
-            <div class="md:hidden z-[99999999999999] fixed-row border-b border-white/20 text-white basis-1/12 p-4 flex flex-row justify-between">
+            <div id="mobile-nav-closed" class="md:hidden z-[99999999999999] fixed-row border-b border-white/20 text-white basis-1/12 p-4 my-4 flex flex-row justify-between">
                 <div><img class="w-12 opacity-70 hover:opacity-100 hover:fill-highlight" src="/assets/images/logo.svg"/></div>
-                <svg class="w-5 fill-white/70" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.67"><path fill-rule="nonzero" d="M0 0h512v23.91H0V0zm0 327.76h512v23.91H0v-23.91zm0-163.88h512v23.91H0v-23.91z"/></svg>
+                <svg onclick="open_nav.call(this)" class="w-5 fill-white/70" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.67"><path fill-rule="nonzero" d="M0 0h512v23.91H0V0zm0 327.76h512v23.91H0v-23.91zm0-163.88h512v23.91H0v-23.91z"/></svg>
+            </div>
+
+            <div id="mobile-nav-open" class="hidden md:hidden flex flex-col fixed row w-full h-screen gradient-bg z-[999999999999999]
+                        text-white font-nav gap-y-4
+                        bg-opacity-10 bg-clip-padding backdrop-filter backdrop-blur-lg
+                        items-center align-center
+                        px-6 py-16">
+              <div class="flex flex-row w-full justify-between border-b border-white/30 pb-4">
+                
+                <img class="w-16 opacity-70 hover:opacity-100 hover:fill-highlight" src="/assets/images/logo.svg"/>
+                <svg onclick="close_nav.call(this)" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    class="w-9 cursor-pointer fill-white" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                  <g>
+                    <path fill="#808184" d="M16,0C11.726,0,7.708,1.664,4.687,4.687C1.665,7.708,0,11.727,0,16s1.665,8.292,4.687,11.313
+                      C7.708,30.336,11.726,32,16,32s8.292-1.664,11.313-4.687C30.335,24.292,32,20.273,32,16s-1.665-8.292-4.687-11.313
+                      C24.292,1.664,20.274,0,16,0z M26.606,26.606C23.773,29.439,20.007,31,16,31s-7.773-1.561-10.606-4.394S1,20.007,1,16
+                      S2.561,8.227,5.394,5.394S11.993,1,16,1s7.773,1.561,10.606,4.394S31,11.993,31,16S29.439,23.773,26.606,26.606z"/>
+                    <path fill="#808184" d="M22.01,9.989c-0.195-0.195-0.512-0.195-0.707,0L16,15.293l-5.303-5.304c-0.195-0.195-0.512-0.195-0.707,0
+                      s-0.195,0.512,0,0.707L15.293,16L9.99,21.304c-0.195,0.195-0.195,0.512,0,0.707c0.098,0.098,0.226,0.146,0.354,0.146
+                      s0.256-0.049,0.354-0.146L16,16.707l5.303,5.304c0.098,0.098,0.226,0.146,0.354,0.146s0.256-0.049,0.354-0.146
+                      c0.195-0.195,0.195-0.512,0-0.707L16.707,16l5.303-5.304C22.206,10.501,22.206,10.185,22.01,9.989z"/>
+                  </g>
+                </svg>
+
+              </div>  
+              <p class="text-2xl cursor-pointer hover:underline hover:text-highlight mt-4">HOME</p>
+              <p class="text-2xl cursor-pointer hover:underline hover:text-highlight">SKILLS</p>
+              <p class="text-2xl cursor-pointer hover:underline hover:text-highlight">WORK</p>
+              <p class="text-2xl cursor-pointer hover:underline hover:text-highlight">ABOUT</p>
+              <p class="text-2xl cursor-pointer hover:underline hover:text-highlight">CONTACT</p>
             </div>
 
             <!-- Main content -->

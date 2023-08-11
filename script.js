@@ -66,3 +66,15 @@ document.onkeydown = function(evt) {
       //console.log(boxes)
   }
 };
+
+function open_nav(){
+  var nav_open=document.getElementById("mobile-nav-open");
+  nav_open.classList.remove("hidden")
+  // console.log(nav_open.classList)
+  // console.log(nav_closed.classList)
+}
+
+function close_nav(){
+  var nav_open=document.getElementById("mobile-nav-open");
+  nav_open.classList.add("hidden")
+}
