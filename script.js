@@ -78,3 +78,4 @@ function close_nav(){
   var nav_open=document.getElementById("mobile-nav-open");
   nav_open.classList.add("hidden")
 }
+

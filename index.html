@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script> 
     <script defer type="module" src="./dataLoaders/index_dataLoader.js"></script> 
+    <script defer src="skew.js"></script> 
     <link rel="stylesheet" href="style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -83,10 +84,10 @@
             </div>
 
             <!-- Main content -->
-            <div class="relative scrollable-section">
+            <div id="skew" class="relative scrollable-section">
         
                 <!-- Hero section -->
-                <div id="hero" class="cursor-default h-[48dvh] md:h-[90dvh] text-white flex flex-col px-6 md:px-16 items-center justify-center">                    
+                <div id="hero"  class="cursor-default h-[48dvh] md:h-[90dvh] text-white flex flex-col px-6 md:px-16 items-center justify-center">                    
                     <div class="font-title font-bold flex flex-col gap-y-4">                      
                       <span class="tracking-widest font-special text-sm md:text-lg text-white text-left">
                         <img class="inline h-5 mr-2 ml-2" src="/assets/images/waving-hand.webp"/>Hi, i'M VeeRAMAnoHAR
@@ -100,7 +101,7 @@
                 </div>
 
                 <!-- Marquee -->
-                <div class="group text-white/80 cursor-default relative w-full flex flex-row border-t-2 border-b-2 bg-black/30 md:bg-black/0 border-highlight overflow-x-hidden mb-24 md:mb-44 tracking-tight">
+                <div  class="group text-white/80 cursor-default relative w-full flex flex-row border-t-2 border-b-2 bg-black/30 md:bg-black/0 border-highlight overflow-x-hidden mb-24 md:mb-44 tracking-tight">
                   
                   <div class="py-3 md:py-6 animate-marquee group-hover:pause whitespace-nowrap text-white">
                       <span class="mx-4 text-4xl">Desire</span>
@@ -145,92 +146,88 @@
                   <div class="flex-1 font-sans font-bold text-7xl w-full">
                     <p class="px-6 md:px-16 mb-3 md:text-4xl text-2xl font-title">What do I do? <span class="font-content text-xs text-white/40 hidden md:inline ">(Hover on each topic to see more details)</span></p>
                     <!-- Skill div -->
-                    <div class="group max-w-full text-center text-black border-t border-b border-white/20
+
+                    <div   class="group max-w-full text-center text-black border-t border-b border-white/20
                                 hover:border-highlight px-6 md:px-16 py-4 md:py-6
                                 transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
+                                tracking-tighter
                                 items-center justify-center relative">
 
                       
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">WEB DEVELOPMENT</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
+                      <p class=" col-span-8 text-3xl md:text-7xl text-left font-title">WEB DEVELOPMENT</p>
+                      <div class="col-span-1"></div>
+                      <p class="hidden md:text-base col-span-3 tracking-normal hidden text-black group-hover:block font-bold text-left font-content">
                         One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
                       </p>
-                      <p class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
+                      <span class="z-[-9999] absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-700 ease-out transform translate-x-0 bg-highlight group-hover:w-full"></span>
+                    </div>
+                    
+                    <div   class="group max-w-full text-center text-black border-t border-b border-white/20
+                                hover:border-highlight px-6 md:px-16 py-4 md:py-6
+                                transition-all duration-200 ease-out
+                                md:grid grid-cols-12
+                                text-highlight hover:text-black transition duration-200
+                                tracking-tighter
+                                items-center justify-center relative">
+
+                      
+                      <p class=" col-span-8 text-3xl md:text-7xl text-left font-title">ARTIFICIAL INTELLIGENCE</p>
+                      <div class="col-span-1"></div>
+                      <p class="hidden md:text-base col-span-3 tracking-normal hidden text-black group-hover:block font-bold text-left font-content">
+                        Designed ML models for real-world problems, and contributed to projects involving Image Processing, CV, and NLP.
                       </p>
                       <span class="z-[-9999] absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-700 ease-out transform translate-x-0 bg-highlight group-hover:w-full"></span>
                     </div>
 
-                    <div class="group max-w-full text-center text-black border-t border-b border-white/20
+                    <div   class="group max-w-full text-center text-black border-t border-b border-white/20
                                 hover:border-highlight px-6 md:px-16 py-4 md:py-6
                                 transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
+                                tracking-tighter
                                 items-center justify-center relative">
 
                       
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">ARTIFICIAL INTELLIGENCE</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <p class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
+                      <p class=" col-span-8 text-3xl md:text-7xl text-left font-title">RESEARCH</p>
+                      <div class="col-span-1"></div>
+                      <p class="hidden md:text-base col-span-3 tracking-normal hidden text-black group-hover:block font-bold text-left font-content">
+                        Engaged in research endeavors spanning AI, Evolutionary Computation, Generative AI, Creativity, and Image Processing domains.
                       </p>
                       <span class="z-[-9999] absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-700 ease-out transform translate-x-0 bg-highlight group-hover:w-full"></span>
                     </div>
 
-                    <div class="group max-w-full text-center text-black border-t border-b border-white/20
+                    <div   class="group max-w-full text-center text-black border-t border-b border-white/20
                                 hover:border-highlight px-6 md:px-16 py-4 md:py-6
                                 transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
+                                tracking-tighter
                                 items-center justify-center relative">
 
                       
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">RESEARCH</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <p class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
+                      <p class=" col-span-8 text-3xl md:text-7xl text-left font-title">GRAPHIC DESIGN</p>
+                      <div class="col-span-1"></div>
+                      <p class="hidden md:text-base col-span-3 tracking-normal hidden text-black group-hover:block font-bold text-left font-content">
+                        Three years of freelance experience with 20+ clients across the globe. Experience in Abode Creative Suite apps.
                       </p>
                       <span class="z-[-9999] absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-700 ease-out transform translate-x-0 bg-highlight group-hover:w-full"></span>
                     </div>
 
-                    <div class="group max-w-full text-center text-black border-t border-b border-white/20
+                    <div   class="group max-w-full text-center text-black border-t border-b border-white/20
                                 hover:border-highlight px-6 md:px-16 py-4 md:py-6
                                 transition-all duration-200 ease-out
                                 md:grid grid-cols-12
                                 text-highlight hover:text-black transition duration-200
+                                tracking-tighter
                                 items-center justify-center relative">
 
                       
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">GRAPHIC DESIGN</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <p class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
-                      </p>
-                      <span class="z-[-9999] absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-700 ease-out transform translate-x-0 bg-highlight group-hover:w-full"></span>
-                    </div>
-
-                    <div class="group max-w-full text-center text-black border-t border-b border-white/20
-                                hover:border-highlight px-6 md:px-16 py-4 md:py-6
-                                transition-all duration-200 ease-out
-                                md:grid grid-cols-12
-                                text-highlight hover:text-black transition duration-200
-                                items-center justify-center relative">
-
-                      
-                      <p class=" col-span-7 text-3xl md:text-6xl text-left font-title">UI/UX & BRANDING</p>
-                      <p class="hidden md:text-base col-span-3 hidden group-hover:block font-bold text-left font-content">
-                        One year of internship experience with expertise in ReactJS, NodeJS, ExpressJS, MongoDB, REST APIs, SQL, and Firebase.
-                      </p>
-                      <p class="hidden md:text-base col-span-2 hidden group-hover:block font-bold text-center font-content">
-                        Click for projects >
+                      <p class=" col-span-8 text-3xl md:text-7xl text-left font-title">UI/UX & BRANDING</p>
+                      <div class="col-span-1"></div>
+                      <p class="hidden md:text-base col-span-3 tracking-normal hidden text-black group-hover:block font-bold text-left font-content">
+                        Conceptualized impactful UI/UX designs for numerous local businesses, crafting distinctive branding elements and logos as well.
                       </p>
                       <span class="z-[-9999] absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-700 ease-out transform translate-x-0 bg-highlight group-hover:w-full"></span>
                     </div>
@@ -536,7 +533,7 @@
     <!-- Templates -->
     <template id="project_template">
       <div onclick="open_popup.call(this)" id="project_box" class="group min-w-[300px] md:max-w-[25%] mt-8">
-        <img src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
+        <img id="coverimg" src="/assets/images/project_cover.jpg" class="grayscale group-hover:grayscale-0">
         <div class="flex flex-col gap-y-6 justify-between border relative group-hover:text-black
                     border-t-0 group-hover:border-highlight border-white/40 h-full p-4 md:py-8 cursor-pointer">
           <div class="cursor-pointer">
@@ -680,14 +677,7 @@
 
     </script>
     
-
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        startEvent: 'load'
-      });
-    </script> -->
-
+  
 
 </body>
 
