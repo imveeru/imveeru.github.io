@@ -32,7 +32,7 @@ const projects = [
 
 //project list
 let temp = document.getElementById("project_template");
-console.log(temp)
+//console.log(temp)
 
 for(let i=0;i<projects.length;i++){
     let clone = temp.content.cloneNode(true);
@@ -53,7 +53,7 @@ for(let i=0;i<projects.length;i++){
     clone.querySelector("#popup_title").textContent=projects[i].title;
     clone.querySelector("#popup_content").textContent=projects[i].content;
     clone.querySelector("#popup_box").dataset.popup_name="popup-"+projects[i].title;
-    console.log(clone.querySelector("#popup_box").dataset.popup_name);
+    //console.log(clone.querySelector("#popup_box").dataset.popup_name);
     document.getElementById("popup_container").appendChild(clone);
 }
 
