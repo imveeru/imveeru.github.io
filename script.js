@@ -24,6 +24,9 @@ tailwind.config = {
           },
         }
       }
+    },
+    future: {
+      hoverOnlyWhenSupported: true,
     }
   }
 

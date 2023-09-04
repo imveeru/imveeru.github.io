@@ -14,10 +14,10 @@ const projects = [
         "id": 2,
         "title": "Pacemon",
         "subtitle": "City Mobility Monitoring Reimagined",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+        "content":"Pacemon is an innovative computer vision application built using Python, OpenCV, SQL, PHP, and jQuery. This powerful tool not only recognizes vehicles but also estimates their speed and enforces fines for violations in real-time. Beyond traffic control, it tracks a vehicle's mobility by monitoring its interactions with cameras. By extracting number plate data and cross-referencing it with driver details in a database, Pacemon ensures precise fine imposition. Additionally, the system stores and monitors vehicle images through a web app, offering a comprehensive solution for traffic management, mobility tracking, and violation enforcement.",
         "cover_img":"/assets/images/projects/pacemon.jpg",
         "tools":["Python","OpenCV","JavaScript","PHP","SQL","MySQL","Bootstrap"],
-        "img":"/assets/images/popup/IntelliML-cover.webp",
+        "img":"/assets/images/popup/pacemon.webp",
         "link":"https://github.com/imveeru/pacemon"
     },
     {
@@ -27,7 +27,7 @@ const projects = [
         "content":"Revolutionizing Warehouse Delivery with Autonomous Robots. Witness the future of efficient product delivery within warehouses through our impressive creation, Wa-Bot. Powered by batteries and driven by innovation, this autonomous path follower robot is a game-changer. The prototype was meticulously crafted using Arduino and ESP, showcasing cutting-edge technology in action. Complementing this hardware marvel is our user-friendly web application, developed using React, JavaScript, and Firebase. Seamlessly order and pay for products, effortlessly harnessing the potential of modern technology to enhance the warehouse experience.",
         "cover_img":"/assets/images/projects/wabot.jpg",
         "tools":["Arduino","JavaScript","React","Firebase","TailwindCSS"],
-        "img":"/assets/images/popup/IntelliML-cover.webp",
+        "img":"/assets/images/popup/wabot.webp",
         "link":"https://github.com/imveeru/warehouse_mgmt"
     },
     {
@@ -37,7 +37,7 @@ const projects = [
         "content":"An interactive Sign Language Learning Companion. Embark on a transformative linguistic adventure with Learn Sign, a cutting-edge web application meticulously crafted using Python, TensorFlow, and ReactJS. This innovative platform introduces an exhilarating approach to mastering American, Indian, and South Korean Sign Languages. Engage in captivating gamified lessons, while real-time hand gesture recognition, powered b TensorFlow, guides your progress. Unveil the enchanting world of sign languages through Learn Sign, where inclusivity, and seamless learning converge for an unmatched educational experience.",
         "cover_img":"/assets/images/projects/learnsign.jpg",
         "tools":["TensorFlow","JavaScript","React"],
-        "img":"/assets/images/popup/IntelliML-cover.webp",
+        "img":"/assets/images/popup/comingsoon.webp",
         "link":""
     }
 ]
