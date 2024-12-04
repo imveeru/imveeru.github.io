@@ -12,7 +12,7 @@ tailwind.config = {
           'title':"DM Sans",
           'special': "Major Mono Display",
           "nav":"DM Sans",
-          "content": "DM Sans"
+          "content": "Poppins"
         },
         animation: {
           marquee: 'marquee 10s linear infinite',

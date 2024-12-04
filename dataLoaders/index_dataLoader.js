@@ -4,7 +4,7 @@ const projects = [
         "id": 1,
         "title": "IntelliML",
         "subtitle": "Data transformed to Insights, Instantly",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+        "content":"ntelliML is an all-in-one automated machine learning (AutoML) platform designed to simplify exploratory data analysis and model building. With IntelliML, users can seamlessly upload datasets to generate comprehensive insights powered by LLMs. The app streamlines the process of model training by testing various machine learning algorithms, offering performance comparisons, and enabling users to download the best-fit model effortlessly. IntelliML is the go-to solution for analysts and developers looking to accelerate their workflow with minimal manual intervention and maximum accuracy.",
         "cover_img":"/assets/images/projects/intelliml.jpg",
         "tools":["Python","LangChain","PalmAPI"],
         "img":"/assets/images/popup/IntelliML-cover.webp",
