@@ -9,10 +9,10 @@ tailwind.config = {
          '12': 'repeat(12, minmax(0, 1fr))',
         },
         fontFamily:{
-          'title':"Chesna Medium",
+          'title':"DM Sans",
           'special': "Major Mono Display",
-          "nav":"Poppins",
-          "content": "Chesna Light"
+          "nav":"DM Sans",
+          "content": "DM Sans"
         },
         animation: {
           marquee: 'marquee 10s linear infinite',

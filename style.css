@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
 html {
@@ -56,7 +57,7 @@ body {
     left: 40%;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Chesna Medium";
     src: url('/assets/fonts/chesnagrotesk-medium.otf');
 }
@@ -64,7 +65,7 @@ body {
 @font-face {
     font-family: "Chesna Light";
     src: url('/assets/fonts/chesnagrotesk-thin.otf');
-}
+} */
 
 
 .cursor{
@@ -91,7 +92,7 @@ body {
 /* preloader */
 
 h1.header {
-	font-family: "Bigilla" !important;
+	font-family: "DM Sans" !important;
 	font-size: 200px;
 	text-transform: uppercase;
 	font-weight: bolder;
@@ -108,7 +109,7 @@ h1.header {
 h1 {
 	font-weight: 500;
 	font-size: 240px;
-	font-family: "Barracuda" !important;
+	font-family: "DM Sans" !important;
 	position: absolute;
 	top: 50%;
 	left: 50%;
