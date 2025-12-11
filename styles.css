@@ -349,10 +349,10 @@ canvas {
 .asterisk {
   vertical-align: super;
   font-style: normal;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #0499FF;
   /* White asterisk */
-  margin-left: 2px;
+  /* margin-left: 2px; */
 }
 
 .hero-title {
