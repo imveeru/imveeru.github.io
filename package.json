@@ -1,0 +1,20 @@
+{
+  "name": "veeramanohar-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/publish.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node --check src/script.js && node --check src/scene.js && node --check src/shaders.js",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "gsap": "3.12.5",
+    "three": "0.160.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.3"
+  }
+}
