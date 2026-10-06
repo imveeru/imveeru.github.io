@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { createSound } from './audio.js';
 
 gsap.registerPlugin(ScrollTrigger);
 const root = document.documentElement;
@@ -9,6 +10,7 @@ const textTop = document.querySelector('.hero-text-top');
 const tagline = document.querySelector('.hero-tagline');
 const nextContent = document.querySelector('.next-section .content');
 const preloader = document.querySelector('.preloader');
+const sound = createSound(document.querySelector('.sound-toggle'));
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
 const layout = matchMedia('(max-width: 768px)');
 let scene;
@@ -61,6 +63,7 @@ function finishIntro() {
   introFinished = true;
   intro?.kill();
   root.classList.remove('intro-pending');
+  sound.finishIntro();
   gsap.set(preloader, { clearProps: 'all' });
   // Content remains visible by default if any dependency fails.
   if (!motion.matches) {
@@ -100,6 +103,7 @@ function playIntro() {
     const start = index * 1.35;
     const chars = word.querySelectorAll('.preloader-letter');
     intro.set(word, { visibility: 'visible' }, start)
+      .call(() => sound.cue(index), [], start)
       .fromTo(chars, { yPercent: 110, opacity: 0, rotationX: -25 }, {
         yPercent: 0, opacity: 1, rotationX: 0, duration: .7, stagger: .025, ease: 'power3.out',
       }, start)
