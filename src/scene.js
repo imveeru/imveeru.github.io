@@ -70,7 +70,7 @@ export class HeroScene {
     if (!this.material || this.disposed) return;
     const { width, height } = this.container.getBoundingClientRect();
     this.mobile = width <= 768;
-    const canvasHeight = this.mobile ? height * (height <= 500 ? 0.58 : 0.65) : height;
+    const canvasHeight = height;
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.setSize(width, canvasHeight, false);
     this.material.uniforms.uResolution.value.set(width, canvasHeight);

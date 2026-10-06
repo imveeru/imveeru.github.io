@@ -97,22 +97,22 @@ function playIntro() {
   });
   intro = gsap.timeline({ onComplete: finishIntro });
   wordElements.forEach((word, index) => {
-    const start = index * .5;
+    const start = index * 1.35;
     const chars = word.querySelectorAll('.preloader-letter');
     intro.set(word, { visibility: 'visible' }, start)
       .fromTo(chars, { yPercent: 110, opacity: 0, rotationX: -25 }, {
-        yPercent: 0, opacity: 1, rotationX: 0, duration: .42, stagger: .018, ease: 'power3.out',
+        yPercent: 0, opacity: 1, rotationX: 0, duration: .7, stagger: .025, ease: 'power3.out',
       }, start)
       .fromTo(word.querySelector('.asterisk'), { opacity: 0, scale: .85 }, {
-        opacity: 1, scale: 1, duration: .35, ease: 'power2.out',
-      }, start + .1);
+        opacity: 1, scale: 1, duration: .55, ease: 'power2.out',
+      }, start + .15);
     if (index < wordElements.length - 1) {
-      intro.to(chars, { yPercent: -100, opacity: 0, duration: .24, stagger: .01, ease: 'power2.in' }, start + .4)
-        .to(word.querySelector('.asterisk'), { opacity: 0, duration: .18 }, start + .4);
+      intro.to(chars, { yPercent: -100, opacity: 0, duration: .35, stagger: .015, ease: 'power2.in' }, start + .95)
+        .to(word.querySelector('.asterisk'), { opacity: 0, duration: .3 }, start + .95);
     }
   });
-  intro.to('.bar', { scaleY: 1, duration: .38, stagger: .012, ease: 'power3.inOut' }, 1.6)
-    .to(preloader, { opacity: 0, duration: .32, ease: 'power2.inOut' }, 1.95);
+  intro.to('.bar', { scaleY: 1, duration: .65, stagger: .018, ease: 'power3.inOut' }, 3.85)
+    .to(preloader, { opacity: 0, duration: .6, ease: 'power2.inOut' }, 4.5);
 }
 
 window.addEventListener('portfolio:intro-timeout', finishIntro, { once: true });
