@@ -31,7 +31,7 @@ flowchart LR
 
 - GSAP and Three.js are pinned and bundled locally. Three.js loads in a separate chunk.
 - Unused Google fonts and browser-generated Tailwind CSS are removed. Adobe fonts retain the original typography.
-- The intro lasts about 2.3 seconds and has a 3.2-second failure timeout. Content remains visible if its module fails.
+- The intro lasts about 5.1 seconds and has a 7-second failure timeout. Content remains visible if its module fails.
 - The GPU animation pauses when the hero has faded out or the document is hidden. It resumes when needed. Animation speed is independent of screen refresh rate.
 - Reduced motion skips the intro, continuous shader animation, and pinned scroll effect.
 - A static gradient and silhouette remain if WebGL fails.
