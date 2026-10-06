@@ -7,7 +7,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build && node scripts/publish.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "check": "node --check src/script.js && node --check src/scene.js && node --check src/shaders.js",
+    "check": "node --check src/script.js && node --check src/scene.js && node --check src/shaders.js && node --check src/audio.js && node --test tests/audio.test.js",
     "verify": "node scripts/verify.mjs"
   },
   "dependencies": {

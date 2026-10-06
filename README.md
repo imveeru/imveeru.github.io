@@ -34,6 +34,7 @@ flowchart LR
 - The intro lasts about 5.1 seconds and has a 7-second failure timeout. Content remains visible if its module fails.
 - The GPU animation pauses when the hero has faded out or the document is hidden. It resumes when needed. Animation speed is independent of screen refresh rate.
 - Reduced motion skips the intro, continuous shader animation, and pinned scroll effect.
+- Sound is off by default. The keyboard-accessible sound button enables original loading chimes and a quiet 72 BPM lo-fi loop, synthesized with Web Audio. No audio file or extra dependency is downloaded. Muting fades out playback; background tabs pause it.
 - A static gradient and silhouette remain if WebGL fails.
 - A single visible heading serves desktop and mobile. A skip link supports keyboard navigation.
 - Metadata, JSON-LD, the sitemap, robots file, favicon, and social preview use `https://veeramanohar.in/`.
