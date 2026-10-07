@@ -18,6 +18,7 @@ export const fragmentShader = `
       uniform float uglassSmoothness;
       uniform float uEdgePadding;
       uniform float uSilhouetteScale;
+      uniform float uSilhouetteAspect;
       
       varying vec2 vUv;
       uniform sampler2D uSilhouette;
@@ -148,12 +149,12 @@ export const fragmentShader = `
 
         // 2. Silhouette Image
         // Calculate silhouette UVs
-        // Height set by uniform (0.7 desktop, 0.5 mobile)
+        // Keep the silhouette anchored to the bottom.
         float silHeight = uSilhouetteScale;
         vec2 silUV = uv;
         
-        // Maintain aspect ratio, but widen slightly (1.45x)
-        float imgAspect = (695.0 / 1437.0) * 1.45; // Width / Height * Multiplier
+        // Use the loaded image dimensions with a slight width adjustment.
+        float imgAspect = uSilhouetteAspect;
         float screenAspect = uResolution.x / uResolution.y; // Width / Height
         
         // Map y from [0, silHeight] to [0, 1] for the silhouette texture
@@ -162,8 +163,9 @@ export const fragmentShader = `
         // Calculate the width of the silhouette in UV space to maintain aspect ratio
         float widthUV = silHeight * imgAspect / screenAspect;
         
-        // Center the silhouette horizontally
-        silUV.x = (uv.x - 0.5) / widthUV + 0.5;
+        // Center the image around the average glass displacement.
+        float glassOffset = uGlassStrength / (2.0 * ustripesFrequency);
+        silUV.x = (uv.x - 0.5 - glassOffset * edgeFactor) / widthUV + 0.5;
         
         // Check bounds
         if (silUV.y >= 0.0 && silUV.y <= 1.0 && silUV.x >= 0.0 && silUV.x <= 1.0) {
