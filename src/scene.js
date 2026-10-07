@@ -11,7 +11,7 @@ const config = {
   edgePadding: 0.1,
 };
 
-// One scene serves both layouts. Shader values and pixel quality are unchanged.
+// One scene serves both layouts.
 export class HeroScene {
   constructor(container) {
     this.container = container;
@@ -48,7 +48,8 @@ export class HeroScene {
           uglassSmoothness: { value: config.glassSmoothness },
           uEdgePadding: { value: config.edgePadding },
           uSilhouette: { value: this.texture },
-          uSilhouetteScale: { value: 0.7 },
+          uSilhouetteScale: { value: 0.64 },
+          uSilhouetteAspect: { value: this.texture.image.width / this.texture.image.height * 1.1 },
         },
         vertexShader, fragmentShader, transparent: true,
       });
@@ -75,7 +76,8 @@ export class HeroScene {
     this.renderer.setSize(width, canvasHeight, false);
     this.material.uniforms.uResolution.value.set(width, canvasHeight);
     this.material.uniforms.uTextureSize.value.set(width, canvasHeight);
-    this.material.uniforms.uSilhouetteScale.value = this.mobile ? 0.75 : 0.7;
+    const aspect = this.material.uniforms.uSilhouetteAspect.value;
+    this.material.uniforms.uSilhouetteScale.value = this.mobile ? Math.min(.66, width * .9 / (height * aspect)) : .64;
     this.render();
   }
 
